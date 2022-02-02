@@ -1,1 +1,0 @@
-{"mappings":"AAAA,QAAQ,CAAC,gBAAgB,CAAC,CAAkB,uBAAQ,CAAC;IACnD,OAAO,CAAC,GAAG,CAAC,CAAM;AACpB,CAAC","sources":["src/js/base.js"],"sourcesContent":["document.addEventListener('DOMContentLoaded', () => {\r\n  console.log('base')\r\n})\r\n"],"names":[],"version":3,"file":"index.043affff.js.map","sourceRoot":"/__parcel_source_root/"}
