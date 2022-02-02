@@ -1,0 +1,29 @@
+{
+  "name": "wwkulery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/pages/**/*.pug",
+    "build": "parcel build src/pages/**/*.pug --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurobas/wwkulery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yurobas/wwkulery/issues"
+  },
+  "homepage": "https://github.com/Yurobas/wwkulery#readme",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "swiper": "^8.0.0"
+  }
+}

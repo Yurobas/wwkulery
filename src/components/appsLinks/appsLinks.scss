@@ -1,0 +1,9 @@
+.appsLinks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  &__link {
+    width: 130px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wwkulery | Главная страница</title>
+  <link rel="stylesheet" href="/src/base/styles.scss">
+  <link rel="stylesheet" href="./index.scss">
+</head>
+<body>
+  <div class="wrapper">
+    include ../../components/header/header
+    <main class="main">
+      include ../../components/productSlider/productSlider
+      include ../../components/news/news
+    </main>
+    include ../../components/footer/footer
+  </div>
+  <script src="../../js/swiper.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

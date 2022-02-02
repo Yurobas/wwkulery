@@ -1,0 +1,1 @@
+{"mappings":"AAAA;EACE;EACA;EACA;EACA","sources":["src/pages/index.scss"],"sourcesContent":[".wrapper {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  min-height: 100vh;\r\n}"],"names":[],"version":3,"file":"index.bcdd3b4e.css.map","sourceRoot":"/__parcel_source_root/"}

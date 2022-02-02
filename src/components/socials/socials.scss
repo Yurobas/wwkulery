@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -14px;
+  &__link {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    margin-right: 14px;
+    border-radius: 50%;
+    color: var(--link-color-white);
+    border: 1px solid var(--bg-socials);
+    background-color: var(--bg-socials);
+    &:hover {
+      border-color: var(--text-color-gray-lighter);
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &--vk,
+    &--inst,
+    &--twitter,
+    &--telegram {
+      width: 14px;
+    }
+    &--fb {
+      width: 8px;
+    }
+    &--youtube {
+      width: 15px;
+    }
+    &--ok {
+      width: 10px;
+    }
+  }
+}
