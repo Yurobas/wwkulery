@@ -1,7 +1,98 @@
 .productSlider {
+  background-color: var(--white);
   &__slider {
+    position: relative;
     margin-top: 35px;
-    border-radius: 6px;
-    border: 1px solid var(--border-gray);
+    background-color: var(--white);
+    &-block {
+      position: relative;
+      border-radius: 6px;
+      border: 1px solid var(--border-gray);
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        z-index: 10;
+      }
+      &:before {
+        left: 0;
+        background-image: linear-gradient(90deg, #fff, transparent);
+      }
+      &:after {
+        right: 0;
+        background-image: linear-gradient(270deg, #fff, transparent);
+      }
+    }
+    &-slide {
+      &:not(:last-child) {
+        border-right: 1px solid var(--border-gray);
+      }
+    }
+    &-button {
+      &-disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+      &-prev,
+      &-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        border: 1px solid var(--border-gray);
+        background-color: var(--white);
+        transform: translate(50%, -50%);
+        transition: var(--transition);
+        cursor: pointer;
+        z-index: 1;
+        &:after {
+          display: none;
+        }
+        &:hover {
+          border-color: var(--text-color-blue);
+          & svg {
+            color: var(--text-color-blue);
+          }
+        }
+        & svg {
+          top: 50%;
+          left: 50%;
+          width: 10px;
+          height: 17px;
+          color: var(--text-color-main);
+          transition: var(--transition);
+        }
+      }
+      &-prev {
+        left: 0;
+        transform: translate(-50%, -50%);
+        & svg {
+          transform: rotate(180deg);
+        }
+      }
+      &-next {
+        right: 0;
+      }
+    }
+    &-scrollbar {
+      height: 14px;
+      margin-top: 40px;
+      border-radius: 6px;
+      background-color: var(--scrollbar-bg);
+      &-drag {
+        height: 100%;
+        border-radius: 6px;
+        background-image: var(--gradient-main);
+        box-shadow: 0 5px 15px var(--scrollbar-shadow);
+      }
+    }
   }
 }

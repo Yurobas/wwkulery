@@ -1,0 +1,14 @@
+.stars {
+  display: flex;
+  &__star {
+    width: 14px;
+    min-width: 14px;
+    height: 13px;
+    margin-right: 5px;
+    clip-path: polygon(50% 0%, 66% 27%, 100% 33%, 75% 60%, 83% 100%, 50% 83%, 16% 100%, 25% 60%, 0% 33%, 33% 27%);
+    background-image: linear-gradient(0deg, var(--orange), var(--orange));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: var(--scrollbar-bg);
+  }
+}

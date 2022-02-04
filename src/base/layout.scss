@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --orange: #fe8712;
 
   --link-color-white: #fff;
 
@@ -19,11 +20,19 @@
   --bg-socials: #323840;
   --bg-arrow: #bebec0;
 
+  --water-hot: #f32929;
+  --water-cold: #30bdff;
+  --water-gas: #7ad6a9;
+  --water-normal: #c5c5c5;
+
   --border-gray: #eaecf0;
 
   --bg-date: #2f3441;
 
   --scrollbar-bg: #dadfe8;
+  --scrollbar-shadow: rgba(4, 113, 190, .35);
+
+  --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
 
   --transition: .25s;
 }
@@ -35,7 +44,7 @@
     box-sizing: border-box;
   }
   &:focus {
-    outline: 1px solid var(--text-color-main);
+    outline: none;
   }
 }
 
@@ -107,6 +116,10 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.none {
+  display: none;
 }
 
 .wrapper {

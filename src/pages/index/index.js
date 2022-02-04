@@ -64,7 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
   +function productSlider() {
     const slider = new Swiper('.productSlider__slider .swiper', {
       speed: 700,
-      slidesPerView: 4
+      slidesPerView: 4,
+      navigation: {
+        nextEl: '.productSlider__slider-button-next',
+        prevEl: '.productSlider__slider-button-prev',
+        disabledClass: 'productSlider__slider-button-disabled'
+      },
+      scrollbar: {
+        el: '.productSlider__slider-scrollbar',
+        draggable: true,
+        dragClass: 'productSlider__slider-scrollbar-drag'
+      }
     })
   }();
 })

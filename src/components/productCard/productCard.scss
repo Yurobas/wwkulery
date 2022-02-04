@@ -1,3 +1,99 @@
 .productCard {
-  
+  &__picture {
+    margin: 40px;
+  }
+  &__picture {
+    position: relative;
+    height: 260px;
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  &__water {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & + & {
+        margin-top: 20px;
+      }
+      &--hot {
+        color: var(--water-hot);
+        & .productCard__water-icon {
+          width: 27px;
+        }
+      }
+      &--gas,
+      &--cold,
+      &--normal {
+        & .productCard__water-icon {
+          width: 31px;
+        }
+      }
+      &--gas {
+        margin-top: 12px !important;
+        color: var(--water-gas);
+      }
+      &--cold {
+        color: var(--water-cold);
+      }
+      &--normal {
+        color: var(--water-normal);
+      }
+    }
+    &-value {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+  }
+  &__info {
+    margin: 40px 40px 30px;
+  }
+  &__name,
+  &__prices {
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-weight: 700;
+  }
+  &__prices {
+    color: var(--text-color-gray-light);
+    &-main {
+      color: var(--text-color-main);
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 40px 40px;
+  }
+  &__icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: var(--text-color-blue);
+    border-radius: 6px;
+    border: 1px solid var(--border-gray);
+    transition: var(--transition);
+    cursor: pointer;
+    &:hover {
+      border-color: var(--text-color-blue);
+    }
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
