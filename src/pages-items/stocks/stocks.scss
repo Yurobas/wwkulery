@@ -1,0 +1,80 @@
+.stocks {
+    &__banner {
+        margin-bottom: 45px;
+    }
+
+    &__banner-text {
+        position: relative;
+    }
+
+    &__banner-left {
+        position: absolute;
+        top: 25%;
+        left: 95px;
+        max-width: 485px;
+        width: 100%;
+        @media (max-width: 1150px) {
+            top: 17%;
+            left: 70px;
+        }
+        @media (max-width: $tabletWide) {
+            max-width: 435px;
+        }
+        @media (max-width: $tablet) {
+            max-width: 365px;
+            top: 14%;
+            left: 50px;
+        }
+        & h3 {
+            color: white;
+            font-size: 37px;
+            margin-bottom: 40px;
+            @media (max-width: 1150px) {
+                font-size: 33px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: $tabletWide) {
+                font-size: 26px;
+                margin-bottom: 25px;
+            }
+            @media (max-width: $tablet) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    &__button {
+        height: 55px;
+        font-size: 15px;
+        font-weight: 500;
+        @media (max-width: $tabletWide) {
+            height: 45px;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 22px;
+        }
+        @media (max-width: $tablet) {
+            height: 41px;
+            font-size: 13px;
+        }
+    }
+
+    &__banner-bg {
+    }
+
+    &__content-text {
+        color: $text_grayL;
+        margin-bottom: 45px;
+    }
+
+    &__content-benefits {
+        display: flex;
+        & ul:first-child {
+            margin-right: 100px;
+        }
+    }
+
+    &__content-list {
+        color: $text_grayL;
+    }
+}

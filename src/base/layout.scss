@@ -30,11 +30,11 @@
   --bg-date: #2f3441;
 
   --scrollbar-bg: #dadfe8;
-  --scrollbar-shadow: rgba(4, 113, 190, .35);
+  --scrollbar-shadow: rgba(4, 113, 190, 0.35);
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
 
-  --transition: .25s;
+  --transition: 0.25s;
 }
 
 * {
@@ -61,10 +61,20 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
+  & li {
+    margin-bottom: 15px;
+  }
+}
+
+hr {
+  border: 2px solid #eaecf0;
+  border-bottom-width: 0;
+  margin: 75px 0 75px;
 }
 
 address {
@@ -83,7 +93,12 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -152,7 +167,8 @@ button {
 }
 
 .title {
-  font-size: 40px;
+  margin-bottom: 45px;
+  font-size: 26px;
   font-weight: 700;
   &--section {
     font-size: 26px;
