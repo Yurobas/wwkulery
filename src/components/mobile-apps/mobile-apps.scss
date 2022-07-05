@@ -1,0 +1,54 @@
+.mobile-apps {
+    &__container {
+        justify-content: space-between;
+        margin: 25px -10px 20px 65px;
+        display: flex;
+        align-items: center;
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin: 25px 0 0;
+        }
+        @media (max-width: $phone) {
+            justify-content: space-between;
+        }
+        &.--banner-container {
+            margin: 0 !important;
+        }
+    }
+    &__link {
+        margin-right: 10px;
+    }
+    &__icon {
+        width: 130px;
+        max-width: 100%;
+        @media (max-width: $desktopWide) {
+            width: 100px;
+            &.--banner-icon {
+                width: 130px !important;
+                @media (max-width: $tabletWide) {
+                    padding: 0 1px 0 1px;
+                }
+            }
+        }
+        @media (max-width: $desktopSmall) {
+            width: 90px;
+            &.--banner-icon {
+                width: 130px !important;
+            }
+        }
+        @media (max-width: $tablet) {
+            width: 130px;
+            margin: 0 15px 0 15px;
+            &.--banner-icon {
+                width: 130px !important;
+            }
+        }
+        @media (max-width: $phone) {
+            width: 100px;
+            margin: 0;
+            &.--banner-icon {
+                width: 130px !important;
+            }
+        }
+    }
+}

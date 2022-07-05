@@ -1,0 +1,76 @@
+.contacts {
+}
+.container {
+}
+.title {
+}
+.map {
+    position: relative;
+    margin-top: 80px;
+    & img {
+        margin: 0 auto;
+    }
+}
+.contacts-address {
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: left;
+        top: 15%;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__left,
+    &__right {
+        box-shadow: $shadow;
+        max-width: 675px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 40px 130px 40px 130px;
+        border-radius: 6px;
+        margin: 0px 15px 0px 15px;
+        & p {
+            color: $text_grayL;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__name {
+    }
+
+    &__right {
+    }
+}
+.open-map {
+}
+.contacts-dashed {
+    border-bottom: 1px dashed $blue;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: dashed;
+    color: $blue;
+    font-size: 20px;
+    &:hover {
+        border-bottom: 1px dashed transparent;
+    }
+}
+.--map-point {
+}
+.contacts-adress {
+    &__link {
+        margin: 0px 10px 0px 10px;
+    }
+}
+.link {
+}
