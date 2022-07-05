@@ -1,0 +1,44 @@
+.benefits {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - (30px * 3) / 4);
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid var(--border-gray);
+    background-color: var(--white);
+  }
+  &__icon {
+    margin-right: 16px;
+  }
+  &__image {
+    &.--economy {
+      width: 40px;
+      min-width: 40px;
+    }
+    &.--heart {
+      width: 36px;
+      min-width: 36px;
+    }
+    &.--nobottles {
+      width: 30px;
+      min-width: 30px;
+    }
+    &.--tap {
+      width: 26px;
+      min-width: 26px;
+    }
+  }
+  &__info {
+    &-text {
+      color: var(--text-color-gray-light);
+    }
+  }
+}

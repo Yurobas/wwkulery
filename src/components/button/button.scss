@@ -1,16 +1,13 @@
 .button {
-  padding: 14px 30px;
+  padding: 14px 30px 13px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   white-space: nowrap;
   border: 1px solid transparent;
   color: var(--text-color-blue);
   background-color: var(--bg-button-default);
   transition: var(--transition);
-  &:hover {
-    border-color: currentColor;
-  }
   &:active {
     transform: translate3d(0, 3px, 0);
   }
@@ -34,12 +31,13 @@
     display: flex;
     justify-content: center;
     width: 205px;
-    padding: 20px 30px;
+    padding: 20px 30px 19px;
+    font-size: 16px;
     &:hover {
       & .button__icon--burger {
         span {
           &:first-child {
-            transform: rotate(35deg) translate3d(3px, 4px, 0);
+            transform: rotate(35deg) translate3d(3px, 5px, 0);
           }
           &:last-child {
             transform: rotate(-35deg) translate3d(2px, -4px, 0);

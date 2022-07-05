@@ -20,6 +20,8 @@
   --bg-socials: #323840;
   --bg-arrow: #bebec0;
 
+  --icon-blue: #0472be;
+
   --water-hot: #f32929;
   --water-cold: #30bdff;
   --water-gas: #7ad6a9;
@@ -144,6 +146,9 @@ button {
   &--gray {
     background-color: var(--bg-gray-light);
   }
+  &--gradient-blue {
+    background: var(--gradient-main);
+  }
   &__header {
     display: flex;
     align-items: center;
@@ -164,13 +169,13 @@ button {
 
 .text {
   font-size: 16px;
+  line-height: 1.5;
   &--small {
     font-size: 14px;
     line-height: 1.7;
   }
   &--mini {
     font-size: 13px;
-    line-height: 1.5;
   }
 }
 
