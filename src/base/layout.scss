@@ -217,6 +217,9 @@ button {
       background-size: 0 1px;
     }
   }
+  &.link--blue {
+    color: $blue;
+  }
 }
 
 .phone {

@@ -14,16 +14,26 @@
   <div class="wrapper">
     include ../../components/header/header
 
-    //- Главная страница
+    //- ! Главная страница
+    <main class="main">
+      include ../../components/productSlider/productSlider
+      include ../../components/news/news
+    </main>
+
+    //- ! Внутреняя страница "Акции"
     //- <main class="main">
-    //-   include ../../components/productSlider/productSlider
-    //-   include ../../components/news/news
+    //-   include ../../pages-items/stocks/stocks
     //- </main>
 
-    //- Внутреняя страница "Акции"
-    <main class="main">
-      include ../../pages-items/stocks/stocks
-    </main>
+    //- ! Внутреняя страница "Контакты"
+    //- <main class="main">
+    //-   include ../../pages-items/contacts/contacts
+    //- </main>
+
+    //- ! Внутреняя страница "Аренда"
+    //- <main class="main">
+    //-   include ../../pages-items/arenda/arenda
+    //- </main>
 
     include ../../components/footer/footer
   </div>

@@ -428,6 +428,9 @@ button {
 .link.link--active:hover {
   background-size: 0 1px;
 }
+.link.link--blue {
+  color: #0472be;
+}
 .phone {
   display: block;
   color: var(--link-color-white);
@@ -1509,5 +1512,58 @@ button {
 }
 .stocks__content-list {
   color: #6c757d;
+}
+.map {
+  position: relative;
+  margin-top: 80px;
+}
+.map img {
+  margin: 0 auto;
+}
+.contacts-address__content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: left;
+  top: 15%;
+}
+@media (max-width: 767px) {
+  .contacts-address__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contacts-address__left, .contacts-address__right {
+  box-shadow: 0px 10px 20px 0px rgba(63, 126, 202, 0.15);
+  max-width: 675px;
+  background-color: white;
+  width: 100%;
+  padding: 40px 130px 40px 130px;
+  border-radius: 6px;
+  margin: 0px 15px 0px 15px;
+}
+.contacts-address__left p, .contacts-address__right p {
+  color: #6c757d;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.contacts-dashed {
+  border-bottom: 1px dashed #0472be;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: dashed;
+  color: #0472be;
+  font-size: 20px;
+}
+.contacts-dashed:hover {
+  border-bottom: 1px dashed transparent;
+}
+.contacts-adress__link {
+  margin: 0px 10px 0px 10px;
 }
 /*# sourceMappingURL=index.f85072a9.css.map */
