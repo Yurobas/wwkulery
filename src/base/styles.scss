@@ -3,17 +3,17 @@
 @import "./variables.scss";
 @import "./layout.scss";
 
-@import '../sections/app/app.scss';
-@import '../sections/news/news.scss';
-@import '../sections/consult/consult.scss';
-@import '../sections/benefits/benefits.scss';
-@import '../sections/productSlider/productSlider.scss';
+@import "../sections/app/app.scss";
+@import "../sections/news/news.scss";
+@import "../sections/consult/consult.scss";
+@import "../sections/benefits/benefits.scss";
+@import "../sections/productSlider/productSlider.scss";
 
-@import '../components/header/header.scss';
-@import '../components/footer/footer.scss';
+@import "../components/header/header.scss";
+@import "../components/footer/footer.scss";
 
-@import '../components/stars/stars.scss';
-@import '../components/productCard/productCard.scss';
+@import "../components/stars/stars.scss";
+@import "../components/productCard/productCard.scss";
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
 @import "../components/breadcrumbs/breadcrumbs.scss";
@@ -30,6 +30,6 @@
 @import "../components/logo/logo.scss";
 @import "../components/button/button.scss";
 
-@import "../pages-items/stocks/stocks.scss";
-@import "../pages-items/contacts/contacts.scss";
-@import "../pages-items/catalog/catalog.scss";
+@import "../pages/stocks/stocks.scss";
+@import "../pages/contacts/contacts.scss";
+@import "../pages/catalog/catalog.scss";
