@@ -1,0 +1,146 @@
+$black: #2a2a2a;
+$blue: #0472be;
+$error: #ff0000;
+$red: #e74c4c;
+$redLight: #cb0000;
+$success: #22a053;
+$green: #02a909;
+$activeOrange: #ff8910;
+$aqua: #28c0bc;
+
+$transparent: rgba(255, 255, 255, 0);
+
+// Текст
+$text_gray: #828282;
+$text_grayL: #6c757d;
+$text_grayDate: #8fa5b7;
+$text_blue: #1480b9;
+$text_link: #1890d6;
+$text_black: #2a2a2a;
+$text_blend: #728ca5;
+$text_blendDark: #43576a;
+$text_blendLight: #83d1ff;
+$text_list_blue: #20a9dc;
+
+// Граница
+$border_gray: #ecf0f4;
+$border_grayLight: #e6f0f8;
+$border_grayDark: #e7e7e7;
+$border_grayAqua: #d5e3ef;
+$border_blue: #1a88bb;
+$border_blueL: #1da8db;
+$border_blueL2: #1b9bca;
+$border_blend: #364b5e;
+$border_orange: #fe8712;
+$border_graySearch: #ced8e0;
+
+// Фон
+$bg_blue: #007bb3;
+$bg_blue2: #0083bc;
+$bg_blueLight: #1da8db;
+$bg-blueDark: #016aa5;
+$bg_gray: #f2f4f7;
+$bg_grayDark: #e1e4e8;
+$bg_grayLight: #fafafa;
+$bg_grayAqua: #b4c5d3;
+$bg_grayStar: #d5dde7;
+$bg_aqua: #29ccc8;
+$bg_scheme: #009ce6;
+$bg_orange: #ff9527;
+$bg_banner_apv: #eae7e7;
+
+// Элементы
+$close: #9b9b9b;
+
+$text_placeholder: $text_grayL;
+$text_checkboxText: $text_grayL;
+
+$product_icon: $text_link;
+$product_type: $text_grayL;
+$product_priceOld: $text_grayL;
+
+$preloader: $text_link;
+
+$slider_scroll: #d6dce5;
+$slider_scrollA: #22acdd;
+$slider_scrollBar: #22acdd;
+$slider_arrow: #b2bdcc;
+$slider_arrowA: #22acdd;
+
+$border_arrow: #b2bdcc;
+$border_table: #e4f1fa;
+$border_heroTab: #e5e9f0;
+$border_inputSearch: #ccd9e2;
+$border_checkbox: #b6c6d4;
+$border_checkboxA: #1da8db;
+$border_inputV: #b6c6d4;
+$border_cart: #e7f0f8;
+$border_cartH: $border_inputV;
+$border_benefits: #e6f0f8;
+
+$bg_button: $bg_blue;
+$bg_buttonH: $bg_blue2;
+$bg_buttonOrange: $activeOrange;
+$bg_buttonOrangeH: #f86a26;
+$bg_buttonAqua: #28c0bc;
+$bg_footer: #1b2c3e;
+$bg_footerDark: #172534;
+$bg_banner: #007bb3;
+$bg_tonningHeroTab: #cce1ed;
+$bg_table: #f3f7fa;
+
+$form_slider: #f0f1f3;
+$form_sliderShadow: 0px 10px 20px 0px rgba(77, 80, 85, 0.2);
+$form-step: #43abd0;
+$form-step-active: #64c5e6;
+
+// Дилерский ЛК
+$dclk_bg: #f4f7f9;
+$dclk_bg_header: #1b2c3e;
+$dclk_border: #e5f0f8;
+$dclk_indicator_active: #22acdd;
+$dclk_indicator_unactive: #cfdfec;
+$dclk_border_blue: #1ba4d9;
+
+// Адаптив
+$desktopWide: 1601px;
+$desktop: 1600px;
+$desktopSmall: 1279px;
+$notebook: 1023px;
+$tabletWide: 900px;
+$tablet: 767px;
+$tabletSmall: 550px;
+$phone: 479px;
+$phoneSmall: 400px;
+
+// Отступы у блока с продуктами
+$productsOffsetArrows: 33px;
+
+// Градиент
+$gradient_aqua: linear-gradient(0deg, #1aa1d7 0%, #24addd 100%);
+$gradient_orange: linear-gradient(0deg, #f86a26 0%, #ff8910 100%);
+$gradient_blue_count: linear-gradient(0deg, #1fa3d8 0%, #28afde 100%);
+
+// Тени
+$shadow: 0px 10px 20px 0px rgba(63, 126, 202, 0.15);
+$shadow2: 0px 10px 40px 0px rgba(63, 126, 202, 0.15);
+$shadow3: 0px 10px 20px 0px rgba(63, 126, 202, 0.2);
+$shadowGeo: 0px 2px 24px 0px rgba(63, 126, 202, 0.15);
+$shadowCertificates: 0px 10px 25px 0px rgba(63, 126, 202, 0.1);
+$shadowInner: inset 0px 0px 5px 10px rgba(242, 244, 247, 0.5);
+
+// Анимация
+$transition: 0.3s ease;
+$transitionMid: 0.5s ease;
+$transitionLong: 0.7s ease;
+
+// Расширения
+%absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Пошаговая форма
+$stepsColor: #b7c5d0;
