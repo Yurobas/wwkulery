@@ -8,6 +8,31 @@
       align-items: center;
       flex-direction: column;
     }
+    & .form__row {
+      & * {
+        flex: 1 1 calc(25% - (20px * 3) / 4);
+      }
+      & .form__label {
+        margin-right: 20px;
+        & + .form__label {
+          margin-top: 0;
+        }
+        &.value {
+          & .form__placeholder {
+            transform: translate3d(0, 10px, 0);
+          }
+        }
+      }
+      & .form__input {
+        padding: 25px 18px 14px;
+      }
+      & .form__placeholder {
+        transform: translate3d(0, 24px, 0);
+      }
+    }
+  }
+  &.--consult {
+
   }
   &__container {
     position: relative;
@@ -39,7 +64,7 @@
     background-color: var(--white);
     &:focus {
       & ~ .form__placeholder {
-        transform: translateY(12px);
+        transform: translate3d(0, 12px, 0);
       }
     }
   }
@@ -47,7 +72,7 @@
     position: absolute;
     top: 0;
     left: 18px;
-    transform: translateY(26px);
+    transform: translate3d(0, 26px, 0);
     color: var(--text-color-gray-light);
     line-height: 1;
     transition: var(--transition);
@@ -121,12 +146,6 @@
     }
     &-item {
       width: 150px;
-    }
-    & .form__label {
-      margin-right: 20px;
-      & + .form__label {
-        margin-top: 0;
-      }
     }
   }
   &__footer {

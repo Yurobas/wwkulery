@@ -1,0 +1,208 @@
+.city-puri {
+  &__map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    &-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 15px;
+      border-radius: 6px;
+      background-color: rgba(246, 247, 251, .9);
+      &-name {
+        margin-right: 35px;
+        margin-bottom: 0;
+      }
+    }
+    &-select {
+      position: relative;
+      max-width: 500px;
+      min-width: 37%;
+      cursor: pointer;
+      &:hover {
+        & .city-puri__map-select-name {
+          border-color: var(--border-black);
+        }
+      }
+      &-name {
+        position: relative;
+        padding: 25px 40px 25px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--border-gray);
+        background-color: var(--white);
+        transition: var(--transition);
+      }
+      &-arrow {
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translate(0, -50%);
+        width: 10px;
+      }
+      &-list {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    &-picture {
+      position: relative;
+    }
+    &-image {
+      width: 1200px;
+      max-width: 100%;
+    }
+    &-city {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &-name {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 2px 10px;
+        border-radius: 6px;
+        background: var(--gradient-name);
+        & span {
+          &:first-child {
+            position: relative;
+            color: var(--white);
+            white-space: nowrap;
+            z-index: 2;
+          }
+          &:last-child {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            transform: rotate(45deg) translate(-75%, 0);
+            background: #2584c6;
+            z-index: 1;
+          }
+        }
+      }
+      &-icon {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--white);
+        z-index: 2;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 23px;
+          height: 23px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, .5);
+          z-index: 1;
+        }
+      }
+      &.--sevastopol {
+        top: 66%;
+        left: -2.9%;
+      }
+      &.--spb {
+        top: 40%;
+        left: 11.5%;
+      }
+      &.--msk {
+        top: 55.5%;
+        left: 10%;
+      }
+      &.--rostov {
+        top: 73.5%;
+        left: 6.5%;
+      }
+      &.--krasnodar {
+        top: 84%;
+        left: 5%;
+      }
+      &.--novgorod {
+        top: 51.5%;
+        left: 22%;
+      }
+      &.--kazan {
+        top: 63%;
+        left: 20.5%;
+      }
+      &.--ufa {
+        top: 73%;
+        left: 21.5%;
+      }
+      &.--ekb {
+        top: 61%;
+        left: 35%;
+      }
+      &.--chelyabinsk {
+        top: 71%;
+        left: 28.5%;
+      }
+      &.--omsk {
+        top: 79%;
+        left: 39.5%;
+      }
+      &.--novosib {
+        top: 87%;
+        left: 43.5%;
+      }
+      &.--krasnoyarsk {
+        top: 81%;
+        left: 51.5%;
+      }
+      &.--khabarovsk {
+        top: 85%;
+        left: 62.5%;
+      }
+      &.--vladivostok {
+        top: 81%;
+        left: 85.5%;
+      }
+      &.--petropavlovsk {
+        top: 39%;
+        left: 87.3%;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-block {
+      &:first-child {
+        max-width: 768px;
+      }
+      &:last-child {
+        width: calc(100% - 768px);
+      }
+    }
+  }
+  &__image {
+    margin-left: auto;
+    border-radius: 6px;
+  }
+  &__text {
+    &:not(.bold) {
+      color: var(--text-color-gray-light);
+    }
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}

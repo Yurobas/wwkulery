@@ -244,12 +244,14 @@
 :root {
   --white: #fff;
   --orange: #fe8712;
+  --azure: #14afb4;
   --link-color-white: #fff;
   --text-color-main: #2f3441;
   --text-color-gray: #4b4e54;
   --text-color-gray-light: #6c757d;
   --text-color-gray-lighter: #868990;
   --text-color-blue: #0572be;
+  --text-color-blue-dark: #0472be;
   --bg-gray: #252b33;
   --bg-gray-dark: #1f242b;
   --bg-gray-light: #f6f7fb;
@@ -264,11 +266,13 @@
   --water-cold: #30bdff;
   --water-gas: #7ad6a9;
   --water-normal: #c5c5c5;
+  --border-black: #2f3441;
   --border-gray: #eaecf0;
   --bg-date: #2f3441;
   --scrollbar-bg: #dadfe8;
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
+  --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
   --transition: 0.25s;
 }
 *, *:before, *:after {
@@ -295,12 +299,8 @@ ol {
   padding: 0;
   list-style: none;
 }
-ul li,
-ol li {
-  margin-bottom: 15px;
-}
 hr {
-  border: 2px solid #eaecf0;
+  border: 2px solid var(--border-gray);
   border-bottom-width: 0;
   margin: 75px 0 75px;
 }
@@ -354,6 +354,9 @@ button {
 .none {
   display: none;
 }
+.bold {
+  font-weight: 700;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -378,6 +381,13 @@ button {
 .section--gradient-blue {
   background: var(--gradient-main);
 }
+.section--small {
+  margin: 60px 0;
+}
+.section--small.section--inner {
+  margin: 0;
+  padding: 60px 0;
+}
 .section__header {
   display: flex;
   align-items: center;
@@ -385,7 +395,7 @@ button {
 }
 .title {
   margin-bottom: 45px;
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 700;
 }
 .title--section {
@@ -405,6 +415,24 @@ button {
 .text--mini {
   font-size: 13px;
 }
+ul.text li {
+  position: relative;
+  padding-left: 20px;
+}
+ul.text li + li {
+  margin-top: 6px;
+}
+ul.text li:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--azure);
+}
 .date {
   padding: 4px 9px;
   color: var(--white);
@@ -422,6 +450,7 @@ button {
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: var(--transition);
+  cursor: pointer;
 }
 .link:hover {
   background-size: 100% 1px;
@@ -602,6 +631,291 @@ button {
   min-width: 26px;
 }
 .benefits__info-text {
+  color: var(--text-color-gray-light);
+}
+.city-puri__map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.city-puri__map-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.city-puri__map-title {
+  margin-bottom: 30px;
+}
+.city-puri__map-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px;
+  border-radius: 6px;
+  background-color: rgba(246, 247, 251, 0.9);
+}
+.city-puri__map-search-name {
+  margin-right: 35px;
+  margin-bottom: 0;
+}
+.city-puri__map-select {
+  position: relative;
+  max-width: 500px;
+  min-width: 37%;
+  cursor: pointer;
+}
+.city-puri__map-select:hover .city-puri__map-select-name {
+  border-color: var(--border-black);
+}
+.city-puri__map-select-name {
+  position: relative;
+  padding: 25px 40px 25px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-gray);
+  background-color: var(--white);
+  transition: var(--transition);
+}
+.city-puri__map-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  width: 10px;
+}
+.city-puri__map-select-list {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.city-puri__map-picture {
+  position: relative;
+}
+.city-puri__map-image {
+  width: 1200px;
+  max-width: 100%;
+}
+.city-puri__map-city {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.city-puri__map-city-name {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 2px 10px;
+  border-radius: 6px;
+  background: var(--gradient-name);
+}
+.city-puri__map-city-name span:first-child {
+  position: relative;
+  color: var(--white);
+  white-space: nowrap;
+  z-index: 2;
+}
+.city-puri__map-city-name span:last-child {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg) translate(-75%, 0);
+  background: #2584c6;
+  z-index: 1;
+}
+.city-puri__map-city-icon {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  z-index: 2;
+}
+.city-puri__map-city-icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+.city-puri__map-city.--sevastopol {
+  top: 66%;
+  left: -2.9%;
+}
+.city-puri__map-city.--spb {
+  top: 40%;
+  left: 11.5%;
+}
+.city-puri__map-city.--msk {
+  top: 55.5%;
+  left: 10%;
+}
+.city-puri__map-city.--rostov {
+  top: 73.5%;
+  left: 6.5%;
+}
+.city-puri__map-city.--krasnodar {
+  top: 84%;
+  left: 5%;
+}
+.city-puri__map-city.--novgorod {
+  top: 51.5%;
+  left: 22%;
+}
+.city-puri__map-city.--kazan {
+  top: 63%;
+  left: 20.5%;
+}
+.city-puri__map-city.--ufa {
+  top: 73%;
+  left: 21.5%;
+}
+.city-puri__map-city.--ekb {
+  top: 61%;
+  left: 35%;
+}
+.city-puri__map-city.--chelyabinsk {
+  top: 71%;
+  left: 28.5%;
+}
+.city-puri__map-city.--omsk {
+  top: 79%;
+  left: 39.5%;
+}
+.city-puri__map-city.--novosib {
+  top: 87%;
+  left: 43.5%;
+}
+.city-puri__map-city.--krasnoyarsk {
+  top: 81%;
+  left: 51.5%;
+}
+.city-puri__map-city.--khabarovsk {
+  top: 85%;
+  left: 62.5%;
+}
+.city-puri__map-city.--vladivostok {
+  top: 81%;
+  left: 85.5%;
+}
+.city-puri__map-city.--petropavlovsk {
+  top: 39%;
+  left: 87.3%;
+}
+.city-puri__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-puri__info-block:first-child {
+  max-width: 768px;
+}
+.city-puri__info-block:last-child {
+  width: calc(100% - 768px);
+}
+.city-puri__image {
+  margin-left: auto;
+  border-radius: 6px;
+}
+.city-puri__text:not(.bold) {
+  color: var(--text-color-gray-light);
+}
+.city-puri__text + .city-puri__text {
+  margin-top: 20px;
+}
+.about-puri__content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-puri__block.--info {
+  position: relative;
+  width: 100%;
+  max-width: 810px;
+  padding-right: 272px;
+  z-index: 2;
+}
+.about-puri__block.--benefits {
+  width: 39%;
+  min-width: 39%;
+}
+.about-puri__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: unset;
+  z-index: 2;
+}
+.about-puri__title {
+  margin-bottom: 30px;
+}
+.about-puri__text {
+  color: var(--text-color-gray-light);
+}
+.about-puri__text + .about-puri__text {
+  margin-top: 20px;
+}
+.about-puri__more {
+  position: relative;
+  transition: var(--transition);
+  z-index: 3;
+}
+.about-puri__more.--active + .about-puri__scheme {
+  opacity: 0;
+  transform: translate3d(0, 40px, 1px);
+}
+.about-puri__scheme {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  max-width: unset;
+  transition: var(--transition);
+  z-index: 1;
+}
+.about-puri__benefit {
+  display: flex;
+}
+.about-puri__benefit + .about-puri__benefit {
+  margin-top: 40px;
+}
+.about-puri__benefit-icon {
+  position: relative;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-black);
+}
+.about-puri__benefit-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-puri__benefit-image.--nobottles {
+  width: 47px;
+}
+.about-puri__benefit-image.--install {
+  width: 52px;
+}
+.about-puri__benefit-image.--quality {
+  width: 48px;
+}
+.about-puri__benefit-image.--types {
+  width: 60px;
+}
+.about-puri__benefit-name {
+  margin-bottom: 10px;
+}
+.about-puri__benefit-text {
   color: var(--text-color-gray-light);
 }
 .productSlider {
@@ -1697,6 +2011,24 @@ button {
   align-items: center;
   flex-direction: column;
 }
+.form.--center .form__row * {
+  flex: 1 1 calc(25% - 15px);
+}
+.form.--center .form__row .form__label {
+  margin-right: 20px;
+}
+.form.--center .form__row .form__label + .form__label {
+  margin-top: 0;
+}
+.form.--center .form__row .form__label.value .form__placeholder {
+  transform: translate3d(0, 10px, 0);
+}
+.form.--center .form__row .form__input {
+  padding: 25px 18px 14px;
+}
+.form.--center .form__row .form__placeholder {
+  transform: translate3d(0, 24px, 0);
+}
 .form__container {
   position: relative;
 }
@@ -1725,13 +2057,13 @@ button {
   background-color: var(--white);
 }
 .form__input:focus ~ .form__placeholder {
-  transform: translateY(12px);
+  transform: translate3d(0, 12px, 0);
 }
 .form__placeholder {
   position: absolute;
   top: 0;
   left: 18px;
-  transform: translateY(26px);
+  transform: translate3d(0, 26px, 0);
   color: var(--text-color-gray-light);
   line-height: 1;
   transition: var(--transition);
@@ -1798,12 +2130,6 @@ button {
 }
 .form__row-item {
   width: 150px;
-}
-.form__row .form__label {
-  margin-right: 20px;
-}
-.form__row .form__label + .form__label {
-  margin-top: 0;
 }
 .form__footer {
   display: flex;

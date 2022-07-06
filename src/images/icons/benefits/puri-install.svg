@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.96 69">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#14afb4;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style>
+  </defs>
+  <polygon class="cls-1" points="70.65 1.5 48.79 12.68 43.49 12.68 36.03 12.68 30.73 12.68 8.87 1.5 8.87 19.39 26.99 19.39 25.1 22.78 25.1 29.57 36.03 29.57 43.49 29.57 54.42 29.57 54.42 22.78 52.53 19.39 70.65 19.39 70.65 1.5"/>
+  <polyline class="cls-1" points="44.97 12.68 44.97 10.37 34.88 10.37 34.88 12.68"/>
+  <line class="cls-1" x1="52.53" y1="19.39" x2="51.21" y2="17.03"/>
+  <line class="cls-1" x1="26.99" y1="19.39" x2="30.73" y2="12.68"/>
+  <ellipse class="cls-1" cx="9.74" cy="50.95" rx="8.24" ry="15.04"/>
+  <line class="cls-1" x1="58.68" y1="35.91" x2="9.74" y2="35.91"/>
+  <line class="cls-1" x1="58.68" y1="66" x2="9.74" y2="66"/>
+  <polyline class="cls-1" points="60.92 67.5 72.93 67.5 84.17 59.55 84.45 43 73.51 34.41 61.5 34.41"/>
+  <line class="cls-1" x1="58.68" y1="35.91" x2="61.5" y2="34.41"/>
+  <line class="cls-1" x1="60.92" y1="67.5" x2="58.8" y2="66"/>
+  <polyline class="cls-1" points="60.92 67.5 72.15 59.55 72.44 43 61.5 34.41"/>
+  <line class="cls-1" x1="84.46" y1="43" x2="78.61" y2="43"/>
+  <line class="cls-1" x1="84.17" y1="59.55" x2="78.32" y2="59.55"/>
+  <line class="cls-1" x1="28.23" y1="29.58" x2="28.23" y2="35.91"/>
+  <line class="cls-1" x1="51.21" y1="29.58" x2="51.21" y2="35.91"/>
+</svg>

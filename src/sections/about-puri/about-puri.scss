@@ -1,0 +1,93 @@
+.about-puri {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block {
+    &.--info {
+      position: relative;
+      width: 100%;
+      max-width: 810px;
+      padding-right: 272px;
+      z-index: 2;
+    }
+    &.--benefits {
+      width: 39%;
+      min-width: 39%;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: unset;
+    z-index: 2;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: var(--text-color-gray-light);
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  &__more {
+    position: relative;
+    transition: var(--transition);
+    z-index: 3;
+    &.--active {
+      & + .about-puri__scheme {
+        opacity: 0;
+        transform: translate3d(0, 40px, 1px);
+      }
+    }
+  }
+  &__scheme {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    max-width: unset;
+    transition: var(--transition);
+    z-index: 1;
+  }
+  &__benefit {
+    display: flex;
+    & + & {
+      margin-top: 40px;
+    }
+    &-icon {
+      position: relative;
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      margin-right: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--border-black);
+    }
+    &-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.--nobottles {
+        width: 47px;
+      }
+      &.--install {
+        width: 52px;
+      }
+      &.--quality {
+        width: 48px;
+      }
+      &.--types {
+        width: 60px;
+      }
+    }
+    &-name {
+      margin-bottom: 10px;
+    }
+    &-text {
+      color: var(--text-color-gray-light);
+    }
+  }
+}

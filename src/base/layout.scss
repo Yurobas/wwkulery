@@ -1,6 +1,7 @@
 :root {
   --white: #fff;
   --orange: #fe8712;
+  --azure: #14afb4;
 
   --link-color-white: #fff;
 
@@ -9,6 +10,7 @@
   --text-color-gray-light: #6c757d;
   --text-color-gray-lighter: #868990;
   --text-color-blue: #0572be;
+  --text-color-blue-dark: #0472be;
 
   --bg-gray: #252b33;
   --bg-gray-dark: #1f242b;
@@ -27,6 +29,7 @@
   --water-gas: #7ad6a9;
   --water-normal: #c5c5c5;
 
+  --border-black: #2f3441;
   --border-gray: #eaecf0;
 
   --bg-date: #2f3441;
@@ -35,6 +38,7 @@
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
+  --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
 
   --transition: 0.25s;
 }
@@ -68,13 +72,10 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
-  & li {
-    margin-bottom: 15px;
-  }
 }
 
 hr {
-  border: 2px solid #eaecf0;
+  border: 2px solid var(--border-gray);
   border-bottom-width: 0;
   margin: 75px 0 75px;
 }
@@ -139,6 +140,10 @@ button {
   display: none;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -164,6 +169,13 @@ button {
   &--gradient-blue {
     background: var(--gradient-main);
   }
+  &--small {
+    margin: 60px 0;
+    &.section--inner {
+      margin: 0;
+      padding: 60px 0;
+    }
+  }
   &__header {
     display: flex;
     align-items: center;
@@ -173,7 +185,7 @@ button {
 
 .title {
   margin-bottom: 45px;
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 700;
   &--section {
     font-size: 26px;
@@ -195,6 +207,27 @@ button {
   }
 }
 
+ul.text {
+  & li {
+    position: relative;
+    padding-left: 20px;
+    & + li {
+      margin-top: 6px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--azure);
+    }
+  }
+}
+
 .date {
   padding: 4px 9px;
   color: var(--white);
@@ -213,6 +246,7 @@ button {
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: var(--transition);
+  cursor: pointer;
   &:hover {
     background-size: 100% 1px;
   }
