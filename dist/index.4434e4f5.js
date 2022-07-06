@@ -67,6 +67,35 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }
         });
     })();
+    (function directoryLinksSlider() {
+        if (window.screen.width < 1023) {
+            let emsStepsSlides = new Swiper(".directory__links.swiper", {
+                loop: false,
+                spaceBetween: 25,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 2
+                    },
+                    480: {
+                        slidesPerView: 3
+                    },
+                    580: {
+                        slidesPerView: 3
+                    },
+                    680: {
+                        slidesPerView: 5
+                    },
+                    1023: {
+                        slidesPerView: 8
+                    }
+                }
+            });
+        }
+    })();
     (function yandexMapContacts() {
         /*
          * Для поиска координат использую API https://yandex.ru/map-constructor/location-tool/

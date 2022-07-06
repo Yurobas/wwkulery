@@ -27,6 +27,9 @@
     &__name {
         & span {
             text-align: center;
+            @media (max-width: $notebook) {
+                font-size: 14px;
+            }
         }
     }
     &__name + &__text {

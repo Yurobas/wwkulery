@@ -13,12 +13,21 @@
         &-left,
         &-right {
             width: calc(100% / 2);
+            @media (max-width: $notebook) {
+                width: 100%;
+            }
         }
         &-left {
             margin-left: 25px;
+            @media (max-width: $notebook) {
+                display: none;
+            }
         }
         &-right {
             margin-right: 25px;
+            @media (max-width: $notebook) {
+                margin-right: 0px;
+            }
         }
     }
 
@@ -109,18 +118,32 @@
             margin-bottom: 30px;
         }
         &-left {
+            width: 100%;
+            @media (max-width: $desktopSmall) {
+                width: 50%;
+            }
+            @media (max-width: $notebook) {
+                width: 100%;
+            }
             p {
                 color: $text_gray;
                 margin-bottom: 15px;
             }
         }
-        &-left,
-        &-right {
-            width: calc(100% / 2);
-        }
         &-right {
             display: flex;
             justify-content: flex-end;
+            width: 50%;
+            & img {
+                width: 375px;
+            }
+            @media (max-width: $notebook) {
+                width: 100%;
+                margin: 0px 0px 0px 10px;
+            }
+            @media (max-width: $tabletWide) {
+                display: none;
+            }
         }
         &-list {
             color: $text_gray;
