@@ -11,11 +11,11 @@
 @import '../sections/about-puri/about-puri.scss';
 @import '../sections/productSlider/productSlider.scss';
 
-@import '../components/header/header.scss';
-@import '../components/footer/footer.scss';
+@import "../components/header/header.scss";
+@import "../components/footer/footer.scss";
 
-@import '../components/stars/stars.scss';
-@import '../components/productCard/productCard.scss';
+@import "../components/stars/stars.scss";
+@import "../components/productCard/productCard.scss";
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
 @import "../components/breadcrumbs/breadcrumbs.scss";
@@ -24,14 +24,17 @@
 @import "../components/stars/stars.scss";
 @import "../components/productCard/productCard.scss";
 
+@import "../components/directory-links/directory-links.scss";
 @import "../components/mobile-banner/mobile-banner.scss";
 @import "../components/mobile-apps/mobile-apps.scss";
+@import "../components/link-round/link-round.scss";
 @import "../components/appsLinks/appsLinks.scss";
 @import "../components/socials/socials.scss";
+@import "../components/button/button.scss";
+@import "../components/round/round.scss";
 @import "../components/form/form.scss";
 @import "../components/logo/logo.scss";
-@import "../components/button/button.scss";
 
-@import "../pages-items/stocks/stocks.scss";
-@import "../pages-items/contacts/contacts.scss";
-@import "../pages-items/catalog/catalog.scss";
+@import "../pages/stocks/stocks.scss";
+@import "../pages/contacts/contacts.scss";
+@import "../pages/catalog/catalog.scss";

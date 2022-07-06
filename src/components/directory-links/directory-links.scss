@@ -1,0 +1,10 @@
+.directory__links {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    &-item {
+        width: calc(100% / 4);
+    }
+}
