@@ -3,8 +3,31 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        @media (max-width: $notebook) {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
     }
     &-item {
         width: calc(100% / 4);
+        @media (max-width: $notebook) {
+            width: 100%;
+        }
+    }
+    &-slider {
+        &__prev,
+        &__next {
+            display: none;
+            @media (max-width: $notebook) {
+                display: block;
+                top: 30%;
+            }
+        }
+        &__next {
+            transform: translate(-115%, 50%);
+        }
+        &__prev {
+            transform: translate(105%, 50%) rotate(180deg);
+        }
     }
 }
