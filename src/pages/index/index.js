@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     +(function headerSlider() {
-        const imagesLinks = [...document.querySelectorAll(".header__visual-slider-link")];
-        const tabsLinks = [...document.querySelectorAll(".header__visual-tab-link")];
+        const imagesLinks = [...document.querySelectorAll(".header-slider__visual-slider-link")];
+        const tabsLinks = [...document.querySelectorAll(".header-slider__visual-tab-link")];
 
-        const tabs = [...document.querySelectorAll(".header__visual-tab")];
-        const images = [...document.querySelectorAll(".header__visual-image")];
+        const tabs = [...document.querySelectorAll(".header-slider__visual-tab")];
+        const images = [...document.querySelectorAll(".header-slider__visual-image")];
 
-        const slider = new Swiper(".header__visual-slider.swiper", {
+        const slider = new Swiper(".header-slider__visual-slider.swiper", {
             loop: true,
             speed: 700,
         });

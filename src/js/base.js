@@ -1,4 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
+  +function headerOffset() {
+    const header = document.querySelector('.header');
+    const content = document.querySelector('.section:first-of-type');
+
+    setHeaderOffset(header);
+
+    window.addEventListener('resize', () => {
+      setHeaderOffset(header);
+    });
+
+    function setHeaderOffset(header) {
+      let offset = 30;
+      let height = header.getBoundingClientRect().height + offset + 'px';
+      content.style.paddingTop = height;
+    }
+  }();
+
+  +function headerAnimation() {
+    const header = document.querySelector('.header');
+    let previousScroll = null;
+    window.addEventListener('scroll', () => {
+      let scroll = pageYOffset;
+      if (scroll > 0) {
+        header.classList.add('--hide');
+        header.classList.add('--scroll');
+        console.log(previousScroll, scroll);
+        if (previousScroll < scroll) {
+          header.classList.add('--hide');
+        } else {
+          header.classList.remove('--hide');
+        }
+      } else {
+        header.classList.remove('--hide');
+        header.classList.remove('--scroll');
+      }
+      
+      previousScroll = scroll;
+    });
+  }();
+
   +function form() {
     const forms = [...document.querySelectorAll('.form')]
     const labels = [...document.querySelectorAll('.form__label')]

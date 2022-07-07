@@ -2,6 +2,7 @@
   --white: #fff;
   --orange: #fe8712;
   --azure: #14afb4;
+  --blue: #0075bf;
 
   --link-color-white: #fff;
 
@@ -36,11 +37,16 @@
 
   --scrollbar-bg: #dadfe8;
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
+  
+  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, .15);
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
 
+  --transparent: rgba(255, 255, 255, 0);
+
   --transition: 0.25s;
+  --transition-mid: 0.35s;
 }
 
 * {
@@ -257,13 +263,18 @@ ul.text {
     }
   }
   &.link--blue {
-    color: $blue;
+    color: var(--text-color-blue);
   }
 }
 
 .phone {
   display: block;
   color: var(--link-color-white);
+  &:hover {
+    & .link {
+      background-size: 100% 1px;
+    }
+  }
   &--icon {
     display: flex;
     align-items: center;
@@ -274,6 +285,7 @@ ul.text {
   &__icon {
     width: 18px;
     margin-right: 8px;
+    transition: var(--transition);
   }
   &__text {
     font-size: 28px;

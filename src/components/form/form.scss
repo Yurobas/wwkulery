@@ -62,6 +62,10 @@
     border-radius: 6px;
     border: 1px solid var(--border-gray);
     background-color: var(--white);
+    transition: var(--transition);
+    &:hover {
+      border-color: var(--border-black);
+    }
     &:focus {
       & ~ .form__placeholder {
         transform: translate3d(0, 12px, 0);
