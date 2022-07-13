@@ -125,10 +125,6 @@
             @media (max-width: $notebook) {
                 width: 100%;
             }
-            p {
-                color: $text_gray;
-                margin-bottom: 15px;
-            }
         }
         &-right {
             display: flex;
@@ -145,8 +141,8 @@
                 display: none;
             }
         }
-        &-list {
-            color: $text_gray;
-        }
+    }
+    &__text {
+        color: $text_gray;
     }
 }

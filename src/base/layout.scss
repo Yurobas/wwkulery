@@ -38,7 +38,7 @@
   --scrollbar-bg: #dadfe8;
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
 
-  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, 0.15);
+
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
@@ -179,6 +179,10 @@ button {
 
 .section {
   margin: 90px 0;
+  &:first-of-type {
+    margin-top: 0;
+    padding-top: 228px;
+  }
   &--inner {
     margin: 0;
     padding: 90px 0;
@@ -228,6 +232,34 @@ button {
   }
   &--mini {
     font-size: 13px;
+  }
+  & + & {
+    margin-top: 15px;
+  }
+  & > * {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+  & ul {
+    & li {
+      position: relative;
+      padding-left: 20px;
+      & + li {
+        margin-top: 6px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--azure);
+      }
+    }
   }
 }
 
