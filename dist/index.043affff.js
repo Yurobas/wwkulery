@@ -94,6 +94,37 @@ document.addEventListener('DOMContentLoaded', ()=>{
             }
         }
     })();
+    (function dropdown() {
+        let items = document.querySelectorAll('.dropdown');
+        let active = '--active';
+        listeners();
+        console.log(items);
+        function listeners() {
+            items.forEach((item)=>{
+                item.addEventListener('click', ()=>{
+                    toggleActive(item);
+                });
+                item.addEventListener('mouseenter', ()=>{
+                    setActive(item);
+                });
+                item.addEventListener('mouseleave', ()=>{
+                    removeActive(item);
+                });
+            });
+        }
+        function setActive(el) {
+            el.classList.add(active);
+        }
+        function removeActive(el) {
+            el.classList.remove(active);
+        }
+        function toggleActive(el) {
+            !el.classList.contains(active) ? setActive(el) : removeActive(el);
+        }
+    })();
+    (function headerOffset() {
+        console.log('test');
+    })();
 });
 
 //# sourceMappingURL=index.043affff.js.map

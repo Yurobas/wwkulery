@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             //Добавляем маркеры на карту
             myMap.geoObjects.add(myPlacemarkWithContent_1).add(myPlacemarkWithContent_2);
         });
-    })(); // Вызов функции (IIFE)
+    })();
 });
 
 //# sourceMappingURL=index.4434e4f5.js.map
