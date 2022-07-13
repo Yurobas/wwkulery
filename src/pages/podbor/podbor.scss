@@ -1,6 +1,16 @@
 .podbor {
+    &__title {
+        margin-bottom: 0px;
+    }
     &__form {
-        // counter-reset: arenda-count;
+        // counter-reset: podbor-count;
+        &-item {
+            &.--kuler {
+                width: 100%;
+                max-width: 630px;
+                margin: 0px 0px 32px 0px;
+            }
+        }
         &-row {
             display: flex;
             align-items: center;
@@ -13,7 +23,7 @@
             }
             &.--block {
                 display: block;
-                & .arenda__form-block + .arenda__form-block {
+                & .podbor__form-block + .podbor__form-block {
                     margin-top: 15px;
                 }
             }
@@ -34,7 +44,7 @@
                 @media (max-width: $desktop) {
                     display: block;
                     width: 100%;
-                    & .arenda__form-head {
+                    & .podbor__form-head {
                         width: 100%;
                         padding: 0;
                     }
@@ -45,6 +55,8 @@
             }
         }
         &-half {
+            width: 50%;
+
             @media (max-width: $desktopSmall) {
                 width: 50%;
             }
@@ -53,11 +65,11 @@
                 @media (max-width: $desktop) {
                     display: block;
                 }
-                & .arenda__form-block {
+                & .podbor__form-block {
                     flex: 1 1 50%;
                 }
             }
-            & + .arenda__form-half {
+            & + .podbor__form-half {
                 padding-left: 80px;
                 @media (max-width: $desktop) {
                     padding-left: 25px;
@@ -88,8 +100,8 @@
                 @media (max-width: $desktopSmall) {
                     padding-top: 50px;
                 }
-                & .arenda__form-item {
-                    & + .arenda__form-item {
+                & .podbor__form-item {
+                    & + .podbor__form-item {
                         margin-top: 50px;
                     }
                 }
@@ -101,9 +113,10 @@
             padding-right: 48px;
             font-size: 14px;
             font-weight: 700;
+            margin-bottom: 25px;
             // &:before {
-            //     counter-increment: arenda-count;
-            //     content: counter(arenda-count) ". ";
+            //     counter-increment: podbor-count;
+            //     content: counter(podbor-count) ". ";
             //     display: inline;
             // }
             @media (max-width: $desktopSmall) {
@@ -133,7 +146,7 @@
                 @media (max-width: $tablet) {
                     margin: -20px -20px 0 0;
                 }
-                & .arenda__form-item {
+                & .podbor__form-item {
                     width: calc(100% / 5 - 40px);
                     max-width: 220px;
                     margin: 40px 40px 0 0;
@@ -150,7 +163,7 @@
                 }
             }
             &.--wide {
-                & .arenda__form-item {
+                & .podbor__form-item {
                     width: calc(100% / 3 - 40px);
                     max-width: 270px;
                     @media (max-width: $notebook) {
@@ -164,7 +177,7 @@
             }
             &.--filterProblems {
                 @media (max-width: 399px) {
-                    & .arenda__form-item {
+                    & .podbor__form-item {
                         &:first-of-type {
                             order: 1;
                         }
@@ -185,7 +198,7 @@
                 flex-wrap: wrap;
                 align-items: center;
                 margin-top: -35px;
-                & .arenda__form-item {
+                & .podbor__form-item {
                     margin-top: 35px;
                     &:not(:last-of-type) {
                         margin-right: 50px;
@@ -225,9 +238,9 @@
                 @media (max-width: 570px) {
                     margin: -30px 0 0 0;
                 }
-                & .arenda__form-item {
+                & .podbor__form-item {
                     width: calc(50% - 30px);
-                    max-width: 300px;
+                    max-width: 305px;
                     margin: 20px 20px 0 0 !important;
                     @media (max-width: 570px) {
                         width: 100%;
@@ -248,25 +261,13 @@
                 flex-wrap: wrap;
                 align-items: flex-end;
                 justify-content: space-between;
-                margin-top: -30px;
+                // margin-top: -30px;
                 @media (max-width: $desktopSmall) {
                     justify-content: flex-start;
-                    margin: -30px -50px 0 0;
+                    // margin: -30px -50px 0 0;
                 }
                 @media (max-width: $tablet) {
                     margin: -30px -30px 0 0;
-                }
-                & .arenda__form-item {
-                    margin: 0 !important;
-                    @media (max-width: $desktopSmall) {
-                        margin: 30px 50px 0 0 !important;
-                    }
-                    @media (max-width: $tablet) {
-                        display: flex;
-                        justify-content: center;
-                        width: calc(100% / 3 - 30px);
-                        margin: 30px 30px 0 0 !important;
-                    }
                 }
             }
         }
@@ -342,7 +343,7 @@
                     @media (max-width: 570px) {
                         flex-wrap: wrap;
                         margin-top: 20px;
-                        & .arenda__form-info-checkbox {
+                        & .podbor__form-info-checkbox {
                             width: 50%;
                             margin-top: 20px;
                         }
@@ -391,10 +392,10 @@
                     align-items: center;
                     justify-content: space-between;
                     margin-top: 30px;
-                    & .arenda__form-info-checkboxes {
+                    & .podbor__form-info-checkboxes {
                         margin-top: 0;
                     }
-                    & .arenda__form-info-button {
+                    & .podbor__form-info-button {
                         padding-right: 0;
                         @media (max-width: $tablet) {
                             margin-top: 30px;
@@ -425,7 +426,7 @@
         }
     }
     &.--ofis {
-        & .arenda__form-head {
+        & .podbor__form-head {
             width: unset;
             margin-bottom: 40px;
             padding: 0;
@@ -434,10 +435,10 @@
             width: 100%;
             max-width: 745px;
         }
-        & .arenda__form-head:before {
+        & .podbor__form-head:before {
             display: none;
         }
-        & .arenda__form-half {
+        & .podbor__form-half {
             flex: 1 1 50%;
             max-width: 50%;
             @media (max-width: $desktopSmall) {
@@ -445,7 +446,7 @@
                 width: 100%;
                 max-width: unset;
             }
-            & + .arenda__form-half {
+            & + .podbor__form-half {
                 padding-left: 40px;
                 @media (max-width: $desktopSmall) {
                     margin-top: 80px;
@@ -459,14 +460,14 @@
                     padding: 0;
                 }
             }
-            & .arenda__form-block {
+            & .podbor__form-block {
                 display: block;
                 padding: 30px 0;
                 &:first-of-type,
                 &:last-of-type {
                     padding: 0;
                 }
-                & + .arenda__form-block {
+                & + .podbor__form-block {
                     @media (max-width: $desktop) {
                         padding-top: 50px;
                     }
@@ -478,17 +479,17 @@
                 }
             }
         }
-        & .arenda__form-info {
+        & .podbor__form-info {
             max-width: 740px;
             margin: 0 auto;
         }
-        & .arenda__form-info-checkboxes {
+        & .podbor__form-info-checkboxes {
             &.--row {
                 align-items: flex-start;
                 justify-content: space-between;
             }
         }
-        & .arenda__form-info-checkbox {
+        & .podbor__form-info-checkbox {
             flex: 1 1 33.33%;
         }
     }
