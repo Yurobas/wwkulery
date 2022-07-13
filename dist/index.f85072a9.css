@@ -1566,6 +1566,7 @@ ul.text li:after {
 }
 .productCard__icon svg {
   position: absolute;
+  width: 25px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1936,6 +1937,7 @@ ul.text li:after {
 }
 .productCard__icon svg {
   position: absolute;
+  width: 25px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
