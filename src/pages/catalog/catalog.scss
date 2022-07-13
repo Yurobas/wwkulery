@@ -1,5 +1,8 @@
 .catalog {
-    &__container {
+    & + .city-puri {
+        & .city-puri__map {
+            display: none;
+        }
     }
     &__top {
         &-wrapper {

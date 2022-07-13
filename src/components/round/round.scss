@@ -6,12 +6,22 @@
     margin-bottom: 10px;
     border-radius: 50%;
     overflow: hidden;
-    transition: all $transition;
+    transition: all var(--transition);
+    &__link {
+        &:hover {
+            & .link {
+                background-size: 100% 1px;
+            }
+            & .round__image {
+                transform: scale3d(1.15, 1.15, 1.15);
+            }
+        }
+    }
     &.default-border {
-        border: 1px solid $border_grayDark;
+        border: 1px solid var(--border-black);
     }
     &.--active {
-        background: linear-gradient(90deg, rgb(10, 93, 179) 0%, rgb(33, 189, 198) 100%);
+        background: var(--gradient-main);
     }
     &__picture {
         position: absolute;
@@ -23,7 +33,7 @@
         transform: translate(-50%, -50%);
         overflow: hidden;
         &.--ems {
-            @media (max-width: $tabletWide) {
+            @media (max-width: var(--media-tabletWide)) {
                 width: 50px;
                 height: 50px;
             }
@@ -34,11 +44,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        background-color: white;
         padding: 3px;
-        transition: all $transition;
-        &:hover {
-            transform: scale(1.2);
-        }
+        background-color: var(--white);
+        transition: var(--transition);
     }
 }
