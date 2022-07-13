@@ -2184,14 +2184,14 @@ ul.text li:after {
   align-items: center;
   flex-direction: column;
 }
-.link-round__link:hover .link--underline {
-  border-color: transparent;
-}
-.link-round__link:hover .link--animation {
-  background-size: 0% 1px;
-}
-.link-round__link:hover .link--animation.link--active {
+.link-round__link:hover .link {
   background-size: 100% 1px;
+}
+.link-round__link:hover .round__image {
+  transform: scale3d(1.15, 1.15, 1.15);
+}
+.link-round__info {
+  text-align: center;
 }
 .link-round__text, .link-round__metro {
   font-size: 14px;
@@ -2199,7 +2199,7 @@ ul.text li:after {
 .link-round__name span {
   text-align: center;
 }
-@media (max-width: 1023px) {
+@media (max-width: var(--media-notebook)) {
   .link-round__name span {
     font-size: 14px;
   }
@@ -2219,7 +2219,7 @@ ul.text li:after {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: var(--bg-button-default);
 }
 .link-round__metro-mark.--red {
   background-color: #ef3b3b;
@@ -2661,12 +2661,6 @@ ul.text li:after {
   border-radius: 50%;
   overflow: hidden;
   transition: all var(--transition);
-}
-.round__link:hover .link {
-  background-size: 100% 1px;
-}
-.round__link:hover .round__image {
-  transform: scale3d(1.15, 1.15, 1.15);
 }
 .round.default-border {
   border: 1px solid var(--border-black);
