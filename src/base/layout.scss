@@ -37,8 +37,8 @@
 
   --scrollbar-bg: #dadfe8;
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
-  
-  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, .15);
+
+  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, 0.15);
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
@@ -199,6 +199,10 @@ button {
   &--block {
     font-size: 22px;
   }
+}
+
+.flex {
+  display: flex;
 }
 
 .text {

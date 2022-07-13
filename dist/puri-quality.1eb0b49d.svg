@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;stroke:#14afb4;stroke-width:2px;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-linecap:round;stroke-linejoin:round;}
+</style>
+  </defs>
+  <line class="cls-1" x1="12" y1="10" x2="12" y2="12"></line>
+  <line class="cls-1" x1="13" y1="7" x2="13" y2="9"></line>
+  <line class="cls-1" x1="28" y1="11" x2="28" y2="13"></line>
+  <line class="cls-1" x1="31" y1="14" x2="31" y2="16"></line>
+  <line class="cls-1" x1="32" y1="10" x2="32" y2="12"></line>
+  <path class="cls-1" d="M150,147H135a2,2,0,0,0-1.31.55l-4.08,3.69c-.43.39-.61.46-.61.76v3a1,1,0,0,0,1,1h44a1,1,0,0,0,1-1v-3c0-.3-.18-.37-.61-.76l-4.08-3.69A2,2,0,0,0,169,147h-3" transform="translate(-128 -128)"></path>
+  <line class="cls-1" x1="1" y1="24" x2="47" y2="24"></line>
+  <path class="cls-2" d="M158,148a6.9,6.9,0,0,0,7-6.57c0-5.36-6-7.76-7-12.43-1,4.67-7,7.07-7,12.43A6.9,6.9,0,0,0,158,148Z" transform="translate(-128 -128)"></path>
+  <path class="cls-2" d="M157.5,175a5.6,5.6,0,0,0,5.5-5.53c0-4.52-4.74-6.54-5.5-10.47-.76,3.93-5.5,5.95-5.5,10.47A5.6,5.6,0,0,0,157.5,175Z" transform="translate(-128 -128)"></path>
+  <path class="cls-2" d="M141,143a5,5,0,0,0,5-4.84c0-3.95-4.31-5.72-5-9.16-.69,3.44-5,5.21-5,9.16A5,5,0,0,0,141,143Z" transform="translate(-128 -128)"></path>
+  <path class="cls-2" d="M140.58,159c-1.28,1.49-2.58,3-2.58,5.17a5,5,0,0,0,10,0c0-2.18-1.3-3.69-2.59-5.18" transform="translate(-128 -128)"></path>
+</svg>

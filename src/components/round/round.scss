@@ -7,6 +7,9 @@
     border-radius: 50%;
     overflow: hidden;
     transition: all $transition;
+    &.default-border {
+        border: 1px solid $border_grayDark;
+    }
     &.--active {
         background: linear-gradient(90deg, rgb(10, 93, 179) 0%, rgb(33, 189, 198) 100%);
     }

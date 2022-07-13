@@ -1,0 +1,51 @@
+.radio {
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        pointer-events: none;
+        &:checked + .radio__body {
+            pointer-events: none;
+            background-color: $form_slider;
+            box-shadow: none;
+            & .radio__icon svg {
+                fill: $text_link;
+            }
+            & .radio__name {
+                color: $text_link;
+            }
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: box-shadow $transition, background-color $transition;
+        box-shadow: $shadow2;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover {
+            & .radio__icon svg {
+                fill: $text_link;
+            }
+            & .radio__name {
+                color: $text_link;
+            }
+        }
+    }
+    &__icon {
+        margin-right: 15px;
+        & svg {
+            fill: $black;
+            transition: fill $transition;
+        }
+    }
+    &__name {
+        font-size: 14px;
+        transition: color $transition;
+    }
+}

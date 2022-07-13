@@ -3,14 +3,14 @@
 @import "./variables.scss";
 @import "./layout.scss";
 
-@import '../sections/app/app.scss';
-@import '../sections/news/news.scss';
-@import '../sections/consult/consult.scss';
-@import '../sections/benefits/benefits.scss';
-@import '../sections/city-puri/city-puri.scss';
-@import '../sections/about-puri/about-puri.scss';
-@import '../sections/productSlider/productSlider.scss';
-@import '../sections/header-slider/header-slider.scss';
+@import "../sections/app/app.scss";
+@import "../sections/news/news.scss";
+@import "../sections/consult/consult.scss";
+@import "../sections/benefits/benefits.scss";
+@import "../sections/city-puri/city-puri.scss";
+@import "../sections/about-puri/about-puri.scss";
+@import "../sections/productSlider/productSlider.scss";
+@import "../sections/header-slider/header-slider.scss";
 
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
@@ -30,12 +30,17 @@
 @import "../components/mobile-apps/mobile-apps.scss";
 @import "../components/link-round/link-round.scss";
 @import "../components/appsLinks/appsLinks.scss";
+@import "../components/checkbox/checkbox.scss";
 @import "../components/socials/socials.scss";
 @import "../components/button/button.scss";
 @import "../components/round/round.scss";
+@import "../components/inner/inner.scss";
+@import "../components/radio/radio.scss";
 @import "../components/form/form.scss";
 @import "../components/logo/logo.scss";
 
-@import "../pages/stocks/stocks.scss";
+@import "../pages/articles-main/articles.scss";
 @import "../pages/contacts/contacts.scss";
 @import "../pages/catalog/catalog.scss";
+@import "../pages/stocks/stocks.scss";
+@import "../pages/arenda/arenda.scss";
