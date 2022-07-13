@@ -1,6 +1,8 @@
 .header-slider {
-  padding-top: 228px !important;
   background-image: var(--gradient-main);
+  &.section {
+    padding-top: 228px;
+  }
   &__content {
     display: flex;
     align-items: stretch;

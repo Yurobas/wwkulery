@@ -14,41 +14,38 @@
   <div class="wrapper">
     include ../../components/header/header
 
-    //- ! Главная страница
     <main class="main">
-      include ../../sections/header-slider/header-slider
-      include ../../sections/productSlider/productSlider
-      include ../../sections/app/app
-      include ../../sections/benefits/benefits
-      include ../../sections/about-puri/about-puri
-      include ../../sections/consult/consult
-      include ../../sections/city-puri/city-puri
-      include ../../sections/news/news
+      //- ! Главная страница
+      //- include ../../sections/header-slider/header-slider
+      //- include ../../sections/productSlider/productSlider
+      //- include ../../sections/app/app
+      //- include ../../sections/benefits/benefits
+      //- include ../../sections/about-puri/about-puri
+      //- include ../../sections/consult/consult
+      //- include ../../sections/city-puri/city-puri
+      //- include ../../sections/news/news
+
+      //- ! Страница товара
+      include ../../pages/product/product
+
+      //- ! Каталог
+      //- include ../../sections/productSlider/productSlider
+      //- include ../../sections/app/app
+      //- include ../../sections/benefits/benefits
+      //- include ../../sections/consult/consult
+      //- include ../../sections/news/news
+
+      //- ! Каталог
+      //- <main class="main">
+      //- include ../../pages/catalog/catalog
+
+      //- ! Внутреняя страница "Акции"
+      //- <main class="main">
+      //- include ../../pages/stocks/stocks
+
+      //- ! Внутреняя страница "Контакты"
+      //- include ../../pages/contacts/contacts
     </main>
-
-    //- //- ! Каталог
-    //- <main class="main">
-    //-   include ../../sections/productSlider/productSlider
-    //-   include ../../sections/app/app
-    //-   include ../../sections/benefits/benefits
-    //-   include ../../sections/consult/consult
-    //-   include ../../sections/news/news
-    //- </main>
-
-    //- ! Каталог
-    <main class="main">
-      include ../../pages/catalog/catalog
-    </main>
-
-    //- ! Внутреняя страница "Акции"
-    //- <main class="main">
-    //-   include ../../pages/stocks/stocks
-    //- </main>
-
-    //- ! Внутреняя страница "Контакты"
-    //- <main class="main">
-    //-   include ../../pages/contacts/contacts
-    //- </main>
 
     include ../../components/footer/footer
   </div>

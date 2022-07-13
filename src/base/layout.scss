@@ -37,8 +37,8 @@
 
   --scrollbar-bg: #dadfe8;
   --scrollbar-shadow: rgba(4, 113, 190, 0.35);
-  
-  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, .15);
+
+
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
@@ -47,6 +47,20 @@
 
   --transition: 0.25s;
   --transition-mid: 0.35s;
+
+  // Тени
+  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, .15);
+
+  // Адаптив
+  --media-desktopWide: 1601px;
+  --media-desktop: 1600px;
+  --media-desktopSmall: 1279px;
+  --media-notebook: 1023px;
+  --media-tabletWide: 900px;
+  --media-tablet: 767px;
+  --media-tabletSmall: 550px;
+  --media-phone: 479px;
+  --media-phoneSmall: 400px;
 }
 
 * {
@@ -291,5 +305,6 @@ ul.text {
     font-size: 28px;
     font-weight: 700;
     line-height: 1;
+    transition: var(--transition);
   }
 }
