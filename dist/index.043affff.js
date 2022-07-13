@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     (function headerOffset() {
         const header1 = document.querySelector('.header');
+        if (!document.querySelector('.section:first-of-type')) return;
         const content = document.querySelector('.section:first-of-type');
         setHeaderOffset(header1);
         window.addEventListener('resize', ()=>{
