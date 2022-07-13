@@ -13,19 +13,19 @@
         &-left,
         &-right {
             width: calc(100% / 2);
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 width: 100%;
             }
         }
         &-left {
             margin-left: 25px;
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 display: none;
             }
         }
         &-right {
             margin-right: 25px;
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 margin-right: 0px;
             }
         }
@@ -38,66 +38,66 @@
             flex-wrap: wrap;
             width: 100%;
             border-radius: 6px;
-            border: 1px solid $border_gray;
+            border: 1px solid var(--border-gray);
         }
     }
     &__product {
         position: relative;
         width: calc(100% / 4);
         visibility: hidden;
-        border-bottom: 0 solid $border_grayLight;
-        transition: box-shadow $transition;
-        @media (max-width: $desktop) {
+        border-bottom: 0 solid var(--border-gray);
+        transition: box-shadow var(--transition);
+        @media (max-width: var(--media-desktop)) {
             width: calc(100% / 3);
             &:not(:nth-of-type(3n + 3)) {
-                border-right: 0 solid $border_grayLight;
+                border-right: 0 solid var(--border-gray);
             }
             &:not(:nth-of-type(4n + 4)) {
                 border-right: unset;
             }
         }
-        @media (max-width: $desktopSmall) {
+        @media (max-width: var(--media-desktopSmall)) {
             width: calc(100% / 2);
             &:not(:nth-of-type(2n + 2)) {
-                border-right: 0 solid $border_grayLight;
+                border-right: 0 solid var(--border-gray);
             }
             &:not(:nth-of-type(3n + 3)) {
                 border-right: unset;
             }
         }
-        @media (max-width: $notebook) {
+        @media (max-width: var(--media-notebook)) {
             width: calc(100% / 3);
             &:not(:nth-of-type(2n + 2)) {
                 border-right: unset;
             }
             &:not(:nth-of-type(3n + 3)) {
-                border-right: 0 solid $border_grayLight;
+                border-right: 0 solid var(--border-gray);
             }
         }
-        @media (max-width: $tablet) {
+        @media (max-width: var(--media-tablet)) {
             width: calc(100% / 2);
             &:not(:nth-of-type(2n + 2)) {
-                border-right: 0 solid $border_grayLight;
+                border-right: 0 solid var(--border-gray);
             }
             &:not(:nth-of-type(3n + 3)) {
                 border-right: unset;
             }
         }
-        @media (max-width: $phone) {
+        @media (max-width: var(--media-phone)) {
             width: 100%;
             &:not(:nth-of-type(2n + 2)) {
                 border-right: unset;
             }
         }
         &:not(:nth-of-type(4n + 4)) {
-            border-right: 0 solid $border_grayLight;
+            border-right: 0 solid var(--border-gray);
         }
         &.--show {
             visibility: visible;
             pointer-events: unset;
             border-width: 1px;
             &:hover {
-                box-shadow: $shadow2;
+                box-shadow: var(--shadow-card);
                 z-index: 2;
             }
             & .filterDynamic__product {
@@ -119,10 +119,10 @@
         }
         &-left {
             width: 100%;
-            @media (max-width: $desktopSmall) {
+            @media (max-width: var(--media-desktopSmall)) {
                 width: 50%;
             }
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 width: 100%;
             }
         }
@@ -133,16 +133,17 @@
             & img {
                 width: 375px;
             }
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 width: 100%;
                 margin: 0px 0px 0px 10px;
             }
-            @media (max-width: $tabletWide) {
+            @media (max-width: var(--media-tabletWide)) {
                 display: none;
             }
         }
     }
     &__text {
-        color: $text_gray;
+        max-width: 770px;
+        color: var(--text-color-gray-light);
     }
 }
