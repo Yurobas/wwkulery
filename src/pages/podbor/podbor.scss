@@ -1,0 +1,495 @@
+.podbor {
+    &__form {
+        // counter-reset: arenda-count;
+        &-row {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+            @media (max-width: $desktopSmall) {
+                display: block;
+            }
+            & + & {
+                border-top: 1px solid $border_grayLight;
+            }
+            &.--block {
+                display: block;
+                & .arenda__form-block + .arenda__form-block {
+                    margin-top: 15px;
+                }
+            }
+            &.--sliders {
+                align-items: stretch;
+                padding-bottom: 75px;
+                @media (max-width: $desktopSmall) {
+                    display: flex;
+                }
+                @media (max-width: $notebook) {
+                    display: block;
+                }
+            }
+            &.--top {
+                align-items: flex-start;
+            }
+            &.--products {
+                @media (max-width: $desktop) {
+                    display: block;
+                    width: 100%;
+                    & .arenda__form-head {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+            }
+            &.--stretch {
+                align-items: stretch;
+            }
+        }
+        &-half {
+            @media (max-width: $desktopSmall) {
+                width: 50%;
+            }
+            &.--row {
+                display: flex;
+                @media (max-width: $desktop) {
+                    display: block;
+                }
+                & .arenda__form-block {
+                    flex: 1 1 50%;
+                }
+            }
+            & + .arenda__form-half {
+                padding-left: 80px;
+                @media (max-width: $desktop) {
+                    padding-left: 25px;
+                }
+                @media (max-width: $notebook) {
+                    width: 100%;
+                    margin-top: 30px;
+                    padding: 0;
+                }
+            }
+        }
+        &-block {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 34px 0;
+            @media (max-width: $desktopSmall) {
+                display: block;
+            }
+            &:first-of-type {
+                padding-top: 0;
+            }
+            &:last-of-type {
+                padding: 0;
+            }
+            &.--stretch {
+                height: 100%;
+                @media (max-width: $desktopSmall) {
+                    padding-top: 50px;
+                }
+                & .arenda__form-item {
+                    & + .arenda__form-item {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+        &-head {
+            width: 300px;
+            min-width: 300px;
+            padding-right: 48px;
+            font-size: 14px;
+            font-weight: 700;
+            // &:before {
+            //     counter-increment: arenda-count;
+            //     content: counter(arenda-count) ". ";
+            //     display: inline;
+            // }
+            @media (max-width: $desktopSmall) {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 0;
+            }
+        }
+        &-body {
+            position: relative;
+            flex: 1;
+            &.--column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                @media (max-width: $notebook) {
+                    display: block;
+                }
+            }
+            &.--radio {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                margin: -40px -40px 0 0;
+                @media (max-width: $tablet) {
+                    margin: -20px -20px 0 0;
+                }
+                & .arenda__form-item {
+                    width: calc(100% / 5 - 40px);
+                    max-width: 220px;
+                    margin: 40px 40px 0 0;
+                    @media (max-width: $desktop) {
+                        width: calc(100% / 3 - 40px);
+                    }
+                    @media (max-width: $tablet) {
+                        width: calc(50% - 20px);
+                        margin: 20px 20px 0 0;
+                    }
+                }
+                & .radio__body {
+                    height: 100%;
+                }
+            }
+            &.--wide {
+                & .arenda__form-item {
+                    width: calc(100% / 3 - 40px);
+                    max-width: 270px;
+                    @media (max-width: $notebook) {
+                        width: calc(50% - 40px);
+                    }
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                        margin: 20px 20px 0 0;
+                    }
+                }
+            }
+            &.--filterProblems {
+                @media (max-width: 399px) {
+                    & .arenda__form-item {
+                        &:first-of-type {
+                            order: 1;
+                        }
+                        &:last-of-type {
+                            order: 4;
+                        }
+                        &:nth-of-type(2) {
+                            order: 3;
+                        }
+                        &:nth-of-type(3) {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+            &.--checkbox {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-top: -35px;
+                & .arenda__form-item {
+                    margin-top: 35px;
+                    &:not(:last-of-type) {
+                        margin-right: 50px;
+                    }
+                    & .checkbox {
+                        &:hover {
+                            & .checkbox__body {
+                                border-color: $border_checkboxA;
+                            }
+                        }
+                        &__input {
+                            &:checked {
+                                & + .checkbox__body {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        &__body {
+                            width: 30px;
+                            min-width: 30px;
+                            height: 30px;
+                            border: 1px solid $bg_gray;
+                            box-shadow: $shadow3;
+                            transition: box-shadow $transition, border-color $transition;
+                            &:before {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.--cards {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -30px -30px 0 0;
+                @media (max-width: 570px) {
+                    margin: -30px 0 0 0;
+                }
+                & .arenda__form-item {
+                    width: calc(50% - 30px);
+                    max-width: 300px;
+                    margin: 20px 20px 0 0 !important;
+                    @media (max-width: 570px) {
+                        width: 100%;
+                        max-width: unset;
+                        margin-right: 0 !important;
+                    }
+                    &.--wide {
+                        width: 100%;
+                        max-width: 745px;
+                        @media (max-width: 570px) {
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+            &.--water {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                justify-content: space-between;
+                margin-top: -30px;
+                @media (max-width: $desktopSmall) {
+                    justify-content: flex-start;
+                    margin: -30px -50px 0 0;
+                }
+                @media (max-width: $tablet) {
+                    margin: -30px -30px 0 0;
+                }
+                & .arenda__form-item {
+                    margin: 0 !important;
+                    @media (max-width: $desktopSmall) {
+                        margin: 30px 50px 0 0 !important;
+                    }
+                    @media (max-width: $tablet) {
+                        display: flex;
+                        justify-content: center;
+                        width: calc(100% / 3 - 30px);
+                        margin: 30px 30px 0 0 !important;
+                    }
+                }
+            }
+        }
+        &-info {
+            max-width: 850px;
+            &-head {
+                display: flex;
+                margin-bottom: 35px;
+                @media (max-width: $phone) {
+                    flex-direction: column;
+                }
+            }
+            &-file {
+                &:not(:last-of-type) {
+                    margin-right: 40px;
+                    @media (max-width: $phone) {
+                        margin: 0 0 15px;
+                    }
+                }
+            }
+            &-content {
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: $tablet) {
+                    display: block;
+                }
+            }
+            &-block {
+                display: flex;
+                flex-direction: column;
+                width: calc(50% - 10px);
+                @media (max-width: $tablet) {
+                    width: 100%;
+                }
+                &.--wide {
+                    width: 100%;
+                }
+                & + & {
+                    @media (max-width: $tablet) {
+                        margin-top: 18px;
+                    }
+                }
+                &-row {
+                    display: flex;
+                    margin-right: -20px;
+                    margin-bottom: 20px;
+                    @media (max-width: $tablet) {
+                        flex-direction: column;
+                        margin-right: 0;
+                    }
+                    & .form__label:not(.form__checkbox) {
+                        flex: 1 1 auto;
+                        margin-right: 20px;
+                        @media (max-width: $tablet) {
+                            margin-right: 0;
+                        }
+                        & + .form__label:not(.form__checkbox) {
+                            margin-top: 0;
+                            @media (max-width: $tablet) {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-checkboxes {
+                margin-top: auto;
+                &.--row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 40px;
+                    @media (max-width: 570px) {
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                        & .arenda__form-info-checkbox {
+                            width: 50%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                @media (max-width: $tablet) {
+                    margin-top: 30px;
+                }
+            }
+            &-checkbox {
+                max-width: calc(50% - 10px);
+                & .checkbox__body {
+                    width: 30px;
+                    min-width: 30px;
+                    height: 30px;
+                    &:before {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            &-footer {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin-top: 50px;
+                @media (max-width: $tablet) {
+                    display: block;
+                    margin-top: 30px;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: $border_grayLight;
+                    z-index: 1;
+                    @media (max-width: $tablet) {
+                        display: none;
+                    }
+                }
+                &.--row {
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    & .arenda__form-info-checkboxes {
+                        margin-top: 0;
+                    }
+                    & .arenda__form-info-button {
+                        padding-right: 0;
+                        @media (max-width: $tablet) {
+                            margin-top: 30px;
+                        }
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            &-button {
+                position: relative;
+                padding: 0 20px;
+                background-color: #fff;
+                z-index: 2;
+                @media (max-width: $tablet) {
+                    width: 100%;
+                    padding: 0;
+                }
+                & .button {
+                    width: 290px;
+                    padding: 20px;
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &.--ofis {
+        & .arenda__form-head {
+            width: unset;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+        & .form__slider {
+            width: 100%;
+            max-width: 745px;
+        }
+        & .arenda__form-head:before {
+            display: none;
+        }
+        & .arenda__form-half {
+            flex: 1 1 50%;
+            max-width: 50%;
+            @media (max-width: $desktopSmall) {
+                flex: unset;
+                width: 100%;
+                max-width: unset;
+            }
+            & + .arenda__form-half {
+                padding-left: 40px;
+                @media (max-width: $desktopSmall) {
+                    margin-top: 80px;
+                    padding: 0;
+                }
+            }
+            &:first-of-type {
+                padding-right: 40px;
+                border: none;
+                @media (max-width: $desktopSmall) {
+                    padding: 0;
+                }
+            }
+            & .arenda__form-block {
+                display: block;
+                padding: 30px 0;
+                &:first-of-type,
+                &:last-of-type {
+                    padding: 0;
+                }
+                & + .arenda__form-block {
+                    @media (max-width: $desktop) {
+                        padding-top: 50px;
+                    }
+                }
+                &.--stretch {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+        & .arenda__form-info {
+            max-width: 740px;
+            margin: 0 auto;
+        }
+        & .arenda__form-info-checkboxes {
+            &.--row {
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+        & .arenda__form-info-checkbox {
+            flex: 1 1 33.33%;
+        }
+    }
+}
