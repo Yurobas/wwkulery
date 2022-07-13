@@ -90,7 +90,7 @@
     &.--boolean {
         &.--active {
             & .checkbox__body .checkbox__trigger {
-                left: calc(100% - 37px);
+                left: calc(100% - 30px);
             }
             & .checkbox__text:nth-child(2) {
                 color: unset;
@@ -128,8 +128,8 @@
             }
         }
         & .checkbox__body {
-            width: 64px;
-            min-width: 64px;
+            width: 60px;
+            min-width: 60px;
             height: 30px;
             margin: 0 30px;
             border: none;
@@ -166,10 +166,11 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 37px;
-        height: 37px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
-        background-color: $border_checkboxA;
+        background: var(--gradient-checkbox);
+        border: 3px solid white;
         box-shadow: $form_sliderShadow;
         transform: translate(0, -50%);
         transition: left $transition;
@@ -254,14 +255,16 @@
             position: absolute;
         }
         &:after {
-            top: calc(50% - 1px);
+            top: calc(50% - 0px);
             left: 50%;
-            width: 9px;
-            height: 5px;
+            width: 15px;
+            height: 15px;
             opacity: 0;
-            border-left: 2px solid #fff;
-            border-bottom: 2px solid #fff;
+            border-radius: 50%;
+            border: 1px solid white;
+            background: var(--gradient-checkbox);
             transition: opacity $transition;
+            box-shadow: 0 2px 10px 0 rgba(62, 126, 255, 0.56);
             transform: translate3d(-50%, -50%, 0px) rotate3d(0, 0, 1, -45deg);
         }
         &:before {
@@ -270,7 +273,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: $border_checkboxA;
+            border: 1px solid $border_gray;
             transform: translate3d(-50%, -50%, 0px) scale3d(0, 0, 1);
             transition: transform $transition;
             will-change: transform;

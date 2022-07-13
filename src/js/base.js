@@ -144,4 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
         !el.classList.contains(active) ? setActive(el) : removeActive(el) ;
     }
   }();
+
+  +function headerOffset() {
+    console.log('test');
+  }();
+
 })

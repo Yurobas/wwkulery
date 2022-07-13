@@ -42,6 +42,7 @@
 
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
+  --gradient-checkbox: linear-gradient(180deg, rgba(73, 144, 204, 1) 35%, rgba(12, 91, 177, 1) 100%);
 
   --transparent: rgba(255, 255, 255, 0);
 
@@ -49,7 +50,7 @@
   --transition-mid: 0.35s;
 
   // Тени
-  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, .15);
+  --shadow-card: 0 10px 40px 0 rgb(63, 126, 202, 0.15);
 
   // Адаптив
   --media-desktopWide: 1601px;
