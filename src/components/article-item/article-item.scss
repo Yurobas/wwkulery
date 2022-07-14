@@ -1,0 +1,37 @@
+.article-item {
+  cursor: pointer;
+  &__link {
+    &:hover {
+        & .round {
+          &.default-border {
+            border-color: var(--border-black);
+          }
+          &__image {
+            transform: scale3d(1.05, 1.05, 1.05);
+          }
+        }
+        & .link {
+            color: var(--text-color-blue);
+            background-size: 100% 1px;
+        }
+    }
+}
+&__top {
+    display: flex;
+    align-items: center;
+}
+&__icon {
+    margin-right: 25px;
+}
+&__text {
+    margin: 15px 0;
+    color: var(--text-color-gray-light);
+}
+&__date {
+    margin-top: 20px;
+    @media (max-width: var(--media-tablet)) {
+        display: flex;
+        justify-content: center;
+    }
+}
+}

@@ -8,66 +8,9 @@
     &__item {
         width: calc(100% / 3 - (60px * 2) / 3);
         margin-top: 75px;
-        cursor: pointer;
-        @media (max-width: var(--media-notebook)) {
-            width: calc(100% / 2);
-            padding: 20px;
-        }
-        @media (max-width: var(--media-tablet)) {
-            width: 100%;
-            padding-bottom: 25px;
-        }
-        &.--aside {
-            width: 100%;
-            padding: 0;
-            margin-bottom: 45px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        &-link {
-            &:hover {
-                & .round__image {
-                    transform: scale3d(1.15, 1.15, 1.15);
-                }
-                & .link {
-                    color: var(--text-color-blue);
-                    background-size: 100% 1px;
-                }
-            }
-        }
-        &-top {
-            display: flex;
-            align-items: center;
-        }
-        &-icon {
-            margin-right: 25px;
-        }
-        &-text {
-            margin: 15px 0;
-            color: var(--text-color-gray-light);
-        }
-        &-date {
-            margin-top: 20px;
-            @media (max-width: var(--media-tablet)) {
-                display: flex;
-                justify-content: center;
-            }
-        }
     }
     &__more {
         margin: 75px 0 90px;
         text-align: center;
-    }
-    &__aside {
-        & h3 {
-            margin-bottom: 50px;
-            font-weight: 600;
-            font-size: 30px;
-        }
-        &-list {
-            display: flex;
-            flex-direction: column;
-        }
     }
 }
