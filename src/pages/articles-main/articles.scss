@@ -1,71 +1,63 @@
 .articles {
-    &__container {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -65px;
     }
     &__item {
+        width: calc(100% / 3 - (60px * 2) / 3);
+        margin-top: 75px;
         cursor: pointer;
+        @media (max-width: var(--media-notebook)) {
+            width: calc(100% / 2);
+            padding: 20px;
+        }
+        @media (max-width: var(--media-tablet)) {
+            width: 100%;
+            padding-bottom: 25px;
+        }
+        &.--aside {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 45px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-link {
+            &:hover {
+                & .round__image {
+                    transform: scale3d(1.15, 1.15, 1.15);
+                }
+                & .link {
+                    color: var(--text-color-blue);
+                    background-size: 100% 1px;
+                }
+            }
+        }
         &-top {
             display: flex;
             align-items: center;
         }
-        &-title {
-            font-weight: 600;
-            margin-left: 25px;
-            line-height: 25px;
+        &-icon {
+            margin-right: 25px;
         }
         &-text {
-            margin: 15px 0px 15px 0px;
+            margin: 15px 0;
             color: var(--text-color-gray-light);
         }
-    }
-
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-        width: calc(100% / 3);
-        padding: 30px;
-        &.--aside {
-            width: 100%;
-            padding: 0px;
-            margin-bottom: 45px;
-            &:last-child {
-                margin-bottom: 0px;
-            }
-        }
-        @media (max-width: $notebook) {
-            width: calc(100% / 2);
-            padding: 20px;
-        }
-        @media (max-width: $tablet) {
-            width: 100%;
-            padding-bottom: 25px;
-            &:last-child {
-                padding-bottom: 0px;
+        &-date {
+            margin-top: 20px;
+            @media (max-width: var(--media-tablet)) {
+                display: flex;
+                justify-content: center;
             }
         }
     }
-
-    &__item-date {
-        margin-top: 30px;
-        @media (max-width: $tablet) {
-            display: flex;
-            justify-content: center;
-        }
-        & span {
-            color: white;
-            background-color: var(--bg-date);
-            padding: 6px 9px 6px 9px;
-            border-radius: 6px;
-        }
-    }
-
     &__more {
-        &-container {
-            text-align: center;
-            margin: 70px 0px 90px;
-        }
+        margin: 75px 0 90px;
+        text-align: center;
     }
     &__aside {
         & h3 {

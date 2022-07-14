@@ -1,4 +1,10 @@
 .link-round {
+    &.--active {
+        pointer-events: none;
+        & .round {
+            background: var(--gradient-main);
+        }
+    }
     &--special {
         & .link-round__name {
             font-size: 18px;

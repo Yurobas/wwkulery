@@ -285,6 +285,7 @@ ul.text {
 }
 
 .date {
+  display: inline-block;
   padding: 4px 9px;
   color: var(--white);
   font-size: 14px;
@@ -294,7 +295,7 @@ ul.text {
 }
 
 .link {
-  display: inline-block;
+  display: inline;
   line-height: 1.3;
   border-color: unset;
   background-image: linear-gradient(currentColor, currentColor);
