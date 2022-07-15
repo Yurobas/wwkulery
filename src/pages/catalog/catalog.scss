@@ -3,32 +3,29 @@
     }
     &__top {
         &-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             margin: 0px 0px 60px 0px;
         }
         &-bg {
         }
-        &-left,
-        &-right {
-            width: calc(100% / 2);
-            @media (max-width: $notebook) {
-                width: 100%;
-            }
-        }
-        &-left {
-            margin-left: 25px;
-            @media (max-width: $notebook) {
-                display: none;
-            }
-        }
-        &-right {
-            margin-right: 25px;
-            @media (max-width: $notebook) {
-                margin-right: 0px;
-            }
-        }
+        // &-left,
+        // &-right {
+        //     width: calc(100% / 2);
+        //     @media (max-width: $notebook) {
+        //         width: 100%;
+        //     }
+        // }
+        // &-left {
+        //     margin-left: 25px;
+        //     @media (max-width: $notebook) {
+        //         display: none;
+        //     }
+        // }
+        // &-right {
+        //     margin-right: 25px;
+        //     @media (max-width: $notebook) {
+        //         margin-right: 0px;
+        //     }
+        // }
     }
 
     &__products {

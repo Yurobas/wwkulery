@@ -1,17 +1,15 @@
 .directory__links {
     &-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        @media (max-width: $notebook) {
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
     }
     &-item {
-        width: calc(100% / 4);
+        width: calc(100% / 8);
+        padding-left: 10px;
+        &:last-child {
+            padding-left: 0px;
+        }
         @media (max-width: $notebook) {
             width: 100%;
+            padding: 0px;
         }
     }
     &-slider {
