@@ -1,0 +1,36 @@
+.article {
+  &__preview {
+    min-height: 500px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    background-color: var(--bg-gray-light);
+    overflow: hidden;
+  }
+  &__date {
+    margin-bottom: 30px;
+  }
+  &__info {
+    color: var(--text-color-gray-light);
+    & .bold {
+      color: var(--text-color-main);
+    }
+    & + & {
+      margin-top: 45px;
+    }
+  }
+  &__images {
+    display: flex;
+  }
+  &__image {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+  &__aside {
+    &-item {
+      & + & {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -1,4 +1,10 @@
 .link-round {
+    &.--active {
+        pointer-events: none;
+        & .round {
+            background: var(--gradient-main);
+        }
+    }
     &--special {
         & .link-round__name {
             font-size: 18px;
@@ -9,16 +15,16 @@
         align-items: center;
         flex-direction: column;
         &:hover {
-            & .link--underline {
-                border-color: transparent;
-            }
-            & .link--animation {
-                background-size: 0% 1px;
-            }
-            & .link--animation.link--active {
+            & .link {
                 background-size: 100% 1px;
             }
+            & .round__image {
+                transform: scale3d(1.15, 1.15, 1.15);
+            }
         }
+    }
+    &__info {
+        text-align: center;
     }
     &__text,
     &__metro {
@@ -27,7 +33,7 @@
     &__name {
         & span {
             text-align: center;
-            @media (max-width: $notebook) {
+            @media (max-width: var(--media-notebook)) {
                 font-size: 14px;
             }
         }
@@ -46,7 +52,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background-color: #ccc;
+            background-color: var(--bg-button-default);
             &.--red {
                 background-color: #ef3b3b;
             }

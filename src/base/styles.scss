@@ -16,11 +16,12 @@
 @import "../components/footer/footer.scss";
 
 @import "../components/stars/stars.scss";
-@import "../components/dropdown/dropdown.scss";
-@import "../components/productCard/productCard.scss";
 @import "../components/header/header.scss";
 @import "../components/footer/footer.scss";
+@import "../components/dropdown/dropdown.scss";
+@import "../components/productCard/productCard.scss";
 @import "../components/breadcrumbs/breadcrumbs.scss";
+@import "../components/article-item/article-item.scss";
 
 @import "../components/stars/stars.scss";
 @import "../components/productCard/productCard.scss";
@@ -40,6 +41,7 @@
 @import "../components/logo/logo.scss";
 
 @import "../pages/articles-main/articles.scss";
+@import "../pages/articles-item/article.scss";
 @import "../pages/contacts/contacts.scss";
 @import "../pages/catalog/catalog.scss";
 @import "../pages/product/product.scss";

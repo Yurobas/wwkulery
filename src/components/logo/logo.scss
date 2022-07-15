@@ -1,4 +1,6 @@
 .logo {
-  color: var(--link-color-white);
-  transition: var(--transition);
+  &__icon {
+    fill: var(--link-color-white);
+    transition: var(--transition);
+  }
 }
