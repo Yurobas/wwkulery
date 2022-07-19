@@ -14,6 +14,7 @@
   --text-color-blue-dark: #0472be;
 
   --bg-gray: #252b33;
+  --bg-noUiLine: #d0d8e3;
   --bg-gray-dark: #1f242b;
   --bg-gray-light: #f6f7fb;
   --bg-button-default: #eef0f6;
@@ -29,7 +30,7 @@
   --water-cold: #30bdff;
   --water-gas: #7ad6a9;
   --water-normal: #c5c5c5;
-  
+
   --border-black: #2f3441;
   --border-gray: #eaecf0;
 
@@ -41,6 +42,13 @@
   --gradient-main: linear-gradient(90deg, #0371be 0%, #12adb2 100%);
   --gradient-name: linear-gradient(90deg, #0371be 0%, #4697cf 100%);
   --gradient-checkbox: linear-gradient(180deg, rgba(73, 144, 204, 1) 35%, rgba(12, 91, 177, 1) 100%);
+  --gradient-nouislider: linear-gradient(
+    to right,
+    rgba(11, 93, 180, 1),
+    rgb(15, 113, 188) 6.72%,
+    rgba(23, 168, 208, 0.8) 47.48%,
+    rgba(30, 205, 222, 1) 65.55%
+  );
 
   --transparent: rgba(255, 255, 255, 0);
 
@@ -211,6 +219,12 @@ button {
   margin-bottom: 45px;
   font-size: 40px;
   font-weight: 700;
+  @media(max-width: $phone) {
+    font-size: 35px;
+  }
+  @media(max-width: $phoneSmall) {
+    font-size: 30px;
+  }
   &--section {
     font-size: 26px;
   }

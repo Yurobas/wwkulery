@@ -73,7 +73,9 @@
             width: 50%;
 
             @media (max-width: $desktopSmall) {
-                width: 50%;
+                width: 100%;
+                max-width: 650px;
+                margin-bottom: 15px;
             }
             &.--row {
                 display: flex;
@@ -143,6 +145,9 @@
         &-body {
             position: relative;
             flex: 1;
+            &.--slider {
+                margin-top: 10px;
+            }
             &.--column {
                 display: flex;
                 flex-direction: column;
@@ -287,7 +292,6 @@
             }
         }
         &-info {
-            max-width: 850px;
             &-head {
                 display: flex;
                 margin-bottom: 35px;
@@ -312,8 +316,7 @@
             }
             &-block {
                 display: flex;
-                flex-direction: column;
-                width: calc(50% - 10px);
+                width: 100%;
                 @media (max-width: $tablet) {
                     width: 100%;
                 }
@@ -369,7 +372,6 @@
                 }
             }
             &-checkbox {
-                max-width: calc(50% - 10px);
                 & .checkbox__body {
                     width: 30px;
                     min-width: 30px;

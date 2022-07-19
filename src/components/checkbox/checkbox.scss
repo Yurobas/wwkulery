@@ -54,6 +54,9 @@
         background-color: #fff;
         border: 1px solid $border_gray;
         overflow: hidden;
+        @media(max-width: $phoneSmall) {
+            padding: 20px;
+        }
     }
     &.--radio,
     &.--filter {
@@ -147,6 +150,14 @@
     &__icon {
         position: absolute;
         right: 20px;
+        &.--kuler {
+            @media (max-width: $tabletSmall) {
+                opacity: 0.3;
+            }
+            @media(max-width: $phoneSmall) {
+                display: none;
+            }
+        }
     }
     &__counter {
         width: 70px;

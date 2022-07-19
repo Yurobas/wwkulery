@@ -15,7 +15,7 @@
                                 <input class="checkbox__counter" type="text" name="podborFormkolvo]" value="30">
                                 <span class="checkbox__text">шт.</span>
                                 <span class="checkbox__text">Количество бутылей в неделю</span>
-                                <svg class="checkbox__icon" width="30" viewBox="0 0 30 48" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="checkbox__icon --kuler" width="30" viewBox="0 0 30 48" xmlns="http://www.w3.org/2000/svg">
                                     <g fill="none" stroke="#2876C0" stroke-miterlimit="10" stroke-width="2">
                                         <path d="m82 95a3 3 0 0 0 3-3v-2c.82-.39 1-.54 1-1v-4c0-.46-.18-.61-1-1v-12c.82-.39 1-.54 1-1v-4c0-.45-.36-.69-1-1v-2c0-3-10-3-10-6v-2l1-1v-4c0-.48.18-2-2-2h-4c-2.18 0-2 1.52-2 2v4l1 1v2c0 3-10 2-10 6v2c-.64.31-1 .55-1 1v4c0 .46.18.61 1 1v12c-.82.39-1 .54-1 1v4c0 .46.18.61 1 1v2a3 3 0 0 0 3 3z" transform="translate(-57 -48)" />
                                         <g stroke-linecap="round">
@@ -326,7 +326,7 @@
             <div class="podbor__form-half">
                 <div class="podbor__form-block">
                     <div class="podbor__form-head">Затраты на воду в месяц</div>
-                    <div class="podbor__form-body">
+                    <div class="podbor__form-body --slider">
                         <div class="form__slider --cost">
                             <div class="form__slider-body" data-type="cost"></div>
                             <input type="text" name="podborFormorder]" class="form__slider-input">
@@ -339,79 +339,6 @@
 
         <div class="podbor__form-row --block">
             <div class="podbor__form-head">Заполните форму и прикрепите файлы</div>
-            <div class="podbor__form-body">
-                <div class="podbor__form-info">
-                    <div class="podbor__form-info-content">
-                        <div class="podbor__form-info-block">
-                            <label class="form__label --name text">
-                                <input class="form__input text" type="text" name="podborFormname]">
-                                <span class="form__placeholder">Имя</span>
-                            </label>
-                            <label class="form__label --phone text">
-                                <input class="form__input text" type="text" inputmode="tel" autocomplete="off" onpaste="return false" name="podborFormphone]">
-                                <span class="form__placeholder">Телефон</span>
-                                <span class="form__warn">Пожалуйста, введите корректный номер</span>
-                            </label>
-                            <label class="form__label --email text">
-                                <input class="form__input text" type="text" name="podborFormemail]">
-                                <span class="form__placeholder">E-mail</span>
-                            </label>
-                        </div>
-                        <div class="podbor__form-info-block">
-                            <div class="form__label form__select">
-                                <input class="form__select-input form__input" type="hidden" name="podborFormselectRegion]"/>
-                                <div class="form__select-head">Ваш регион:</div>
-                                <ul class="form__select-list">
-                                    <li class="form__select-item">Москва и область</li>
-                                    <li class="form__select-item">Санкт-Петербург и область</li>
-                                    <li class="form__select-item">Другой регион</li>
-                                </ul>
-                            </div>
-                            <label class="form__label text">
-                                <textarea class="form__input text" type="text" name="podborFormcomment]"></textarea>
-                                <span class="form__placeholder">Дополнительная информация</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="podbor__form-info-checkboxes --row">
-                        <label class="podbor__form-info-checkbox file">
-                            <input class="file__input" type="file" multiple name="podborFormfile][]">
-                            <div class="file__container">
-                                <span class="file__body"></span>
-                                <span class="file__text">Прикрепить анализ воды</span>
-                            </div>
-                            <span class="file__counter"></span>
-                        </label>
-                        <label class="podbor__form-info-checkbox form__checkbox checkbox checkbox--presentation">
-                            <input class="checkbox__input" type="checkbox" name="podborFormpresentation]" value="1" checked>
-                            <span class="checkbox__body"></span>
-                            <span class="checkbox__text">
-                                | Получить презентацию на&nbsp;почту
-                            </span>
-                        </label>
-                        <label class="podbor__form-info-checkbox form__checkbox checkbox checkbox--policy">
-                            <input class="checkbox__input" type="checkbox" name="podborFormprivacy]" value="1" checked>
-                            <span class="checkbox__body"></span>
-                            <a target="_blank" href="#" class="link checkbox__text --mini">
-                                | Я принимаю условия передачи информации
-                            </a>
-                        </label>
-                    </div>
-                    <div class="podbor__form-info-footer">
-                        <div class="podbor__form-info-button">
-                            <button type="submit" class="button button--light">Подобрать оборудование</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="form__response">
-                    <div class="form__response-icon">
-                        <span class="form__response-icon-tip"></span>
-                        <span class="form__response-icon-long"></span>
-                    </div>
-                    <div class="form__response-title title title--block">Заявка успешно отправлена</div>
-                    <p class="form__response-description text"></p>
-                </div>
-            </div>
         </div>
 
     </div>

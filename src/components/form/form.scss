@@ -1,4 +1,71 @@
 .form {
+  &__slider {
+    width: 440px;
+    padding-bottom: 35px;
+    @media (max-width: $phone) {
+      width: 100%;
+    }
+    &-input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    & .noUi-origin {
+      will-change: transform;
+    }
+    & .noUi-target {
+      padding: 0 0px 0px 19px;
+    }
+    & .noUi-connects {
+      margin: 0 -19px;
+      width: calc(100% + 27px);
+      border-radius: 15px;
+    }
+    & .noUi-connect {
+      background: var(--gradient-nouislider);
+      position: relative;
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 9px;
+      //   height: 100px;
+      //   left: -9px;
+      //   top: -15px;
+      //   transform: rotate(37deg);
+      //   background-color: rgba(255, 255, 255, 0.16);
+      // }
+    }
+    & .noUi-horizontal {
+      height: 14px;
+      border-radius: 15px;
+      background-color: $form_slider;
+      & .noUi-handle {
+        top: -9px !important;
+        right: -8px !important;
+        width: 30px !important;
+        height: 30px !important;
+        background: var(--gradient-checkbox) !important;
+        border: 3px solid white;
+        box-shadow: 0 10px 20px 0 rgba(77, 80, 85, 0.2);
+        &:before {
+          opacity: 0;
+
+          left: 50%;
+          width: 10px;
+          height: 12px;
+          background-image: repeating-linear-gradient(90deg, #fff, #fff 1px, #22acdd 1px, #22acdd 4px);
+        }
+      }
+    }
+    & .noUi-pips-horizontal {
+      width: unset;
+      top: 28px;
+      right: 0;
+      margin: 0px 8px 0px 17px;
+    }
+  }
   &.--center {
     & .form__title {
       text-align: center;
@@ -32,7 +99,6 @@
     }
   }
   &.--consult {
-
   }
   &__container {
     position: relative;
@@ -44,9 +110,14 @@
   &__label {
     display: block;
     position: relative;
-    & + & {
-      margin-top: 20px;
+    width: 100%;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
     }
+    // & + & {
+    //   margin-top: 20px;
+    // }
     &.value {
       & .form__placeholder {
         transform: translateY(12px);
