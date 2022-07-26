@@ -1,0 +1,39 @@
+.table {
+    overflow-x: auto;
+    &-wide {
+        font-weight: 400;
+        text-align: center;
+    }
+    & table {
+        width: 100%;
+        min-width: 738px;
+        margin: 25px 0;
+        border-collapse: collapse;
+    }
+    b,
+    strong,
+    th {
+        font-weight: 400;
+    }
+    & th,
+    & td {
+        padding: 22px 37px;
+        border: 1px solid var(--bg-table);
+        line-height: 1.35;
+    }
+    thead tr,
+    tr:nth-of-type(even) {
+        background-color: var(--bg-table);
+    }
+
+    @media (max-width: 1400px) {
+        .table-text-wide {
+            text-align: left;
+        }
+        th,
+        td {
+            padding-left: 33px;
+            padding-right: 33px;
+        }
+    }
+}

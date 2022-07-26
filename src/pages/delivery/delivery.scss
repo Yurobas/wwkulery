@@ -1,0 +1,33 @@
+.delivery {
+    &__img {
+        &-left {
+            float: left;
+            margin: 0px 25px 25px 0px;
+            width: 485px;
+            @media(max-width: $tablet) {
+                width: 285px;
+            }
+            @media(max-width: $tabletSmall) {
+                float: inherit;
+                margin: 0 auto;
+                width: 350px;
+            }
+        }
+        &-right {
+            float: right;
+            margin: 25px 0px 25px 25px;
+            width: 485px;
+            @media(max-width: $tablet) {
+                width: 285px;
+            }
+            @media(max-width: $tabletSmall) {
+                float: inherit;
+                margin: 0 auto;
+                width: 350px;
+            }
+        }
+    }
+    &__title {
+        color: black;
+    }
+}

@@ -1,0 +1,47 @@
+.vacancy {
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px !important;
+        @media(max-width: $tablet) {
+            flex-direction: column;
+        }
+        @media(max-width: $tablet) {
+            margin-top: 45px !important;
+
+        }
+        & div {
+            @media(max-width: $tablet) {
+                width: 100%;
+            }
+            width: 50%;
+            &:first-child {
+                margin-right: 60px;
+                @media(max-width: $tablet) {
+                    margin-right: 0px;
+                }
+            }
+            & ul {
+                margin-bottom: 60px;
+                @media(max-width: $phone) {
+                    margin-bottom: 35px;
+                }
+            }
+            & h2 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__img {
+        float: left; 
+        width: 500px;
+        @media(max-width: $tablet) {
+            width: 285px;
+        }
+        @media(max-width: $tabletSmall) {
+            float: inherit;
+            margin: 0 auto;
+            width: 350px;
+        }
+    }
+}

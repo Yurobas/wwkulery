@@ -23,6 +23,8 @@
   --bg-button-blue: #208ac4;
   --bg-socials: #323840;
   --bg-arrow: #bebec0;
+  --bg-table: #F4F5FA;
+
 
   --icon-blue: #0472be;
 
@@ -169,7 +171,7 @@ button {
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .wrapper {
