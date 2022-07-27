@@ -108,4 +108,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })();
 
+    +(function reviewsSlider() {
+        let reviewsSlider = new Swiper(".reviews__slider-block.swiper", {
+        loop: false,
+        speed: 700,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                580: {
+                    slidesPerView: 1,
+                },
+                700: {
+                    slidesPerView: 2,
+                },
+                1100: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        
+    })();
+
 });
