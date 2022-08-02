@@ -2492,6 +2492,39 @@ ul.text li:after {
   transform: translate(105%, 50%) rotate(180deg);
 }
 
+.arenda-benefits {
+  margin: 65px 0 65px;
+  padding: 55px 0 55px;
+  background-color: var(--bg-gray-light);
+}
+
+.arenda-benefits__title {
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+
+.arenda-benefits__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arenda-benefits__item {
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 25px 35px 25px 35px;
+  width: calc(20% - 20px);
+  display: flex;
+  align-items: center;
+}
+
+.arenda-benefits__item svg {
+  margin-right: 20px;
+  max-width: 45px;
+  max-height: 45px;
+  width: 100%;
+  height: 100%;
+}
+
 .reviews {
   padding-top: 0px !important;
 }
@@ -4568,8 +4601,162 @@ ul.text li:after {
   margin: 0px 0px 20px 20px;
 }
 
+@media (max-width: 767px) {
+  .service-center__reasons-img {
+    float: inherit;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+}
+
 .service-center__reasons-title {
   margin-bottom: 45px;
+}
+
+.kulery-gas__container {
+  margin: 80px 0px 0px 0px;
+}
+
+.kulery-gas__purif-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 440px;
+  padding: 0px 80px 0px 80px;
+  border-radius: 9px;
+  margin: 90px 0 80px;
+  justify-content: space-between;
+  background: var(--gradient-main);
+}
+
+@media (max-width: 900px) {
+  .kulery-gas__purif-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+  }
+}
+
+.kulery-gas__purif-start {
+  width: 40%;
+}
+
+@media (max-width: 900px) {
+  .kulery-gas__purif-start {
+    width: 55%;
+  }
+}
+
+.kulery-gas__purif-start h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.kulery-gas__purif-start ul li {
+  color: white;
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: space-between;
+}
+
+.kulery-gas__purif-middle {
+  position: absolute;
+  position: absolute;
+  left: 43%;
+  top: -15px;
+}
+
+@media (max-width: 1100px) {
+  .kulery-gas__purif-middle {
+    left: 42%;
+    top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .kulery-gas__purif-middle {
+    left: 43%;
+    top: 47px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kulery-gas__purif-middle {
+    left: 55%;
+    top: 16%;
+  }
+}
+
+.kulery-gas__purif-middle img {
+  width: 220px;
+}
+
+@media (max-width: 1100px) {
+  .kulery-gas__purif-middle img {
+    width: 190px;
+  }
+}
+
+@media (max-width: 991px) {
+  .kulery-gas__purif-middle img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kulery-gas__purif-middle img {
+    width: 240px;
+  }
+}
+
+.kulery-gas__purif-end {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .kulery-gas__purif-end {
+    width: 58%;
+  }
+}
+
+.kulery-gas__purif-btn {
+  height: 100px;
+  text-align: center;
+}
+
+.kulery-gas__purif-btn a {
+  padding: 21px 97px 21px;
+  font-size: 18px;
+}
+
+.kulery-gas__benefits {
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.kulery-gas__benefits img {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  .kulery-gas__benefits img {
+    max-width: 80px;
+  }
+}
+
+.kulery-gas__benefits p {
+  color: white;
+}
+
+.kulery-gas__benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .articles__list {

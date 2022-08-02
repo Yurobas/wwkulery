@@ -1,0 +1,121 @@
+.kulery-gas {
+
+		&__container {
+            margin: 80px 0px 0px 0px;
+		}
+
+		&__title {
+
+		}
+
+		&__purif {
+		}
+
+		&__purif-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 440px;
+            padding: 0px 80px 0px 80px;            
+            border-radius: 9px;
+            margin: 90px 0 80px;
+            justify-content: space-between;
+            background: var(--gradient-main);
+            @media(max-width: 900px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 100%;
+            }
+		}
+
+		&__purif-start {
+            width: 40%;
+            @media(max-width: 900px) {
+                width: 55%;
+            }
+            & h3 {
+                color: white;
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            & ul {
+                & li {
+                    color: white;
+                    display: flex;
+                    margin-bottom: 35px;
+                    justify-content: space-between;
+                }
+            }
+		}
+
+		&__purif-middle {
+            position: absolute;
+            position: absolute;
+            left: 43%;
+            top: -15px;
+            @media(max-width: 1100px) {
+                left: 42%;
+                top: 15px;
+            }
+            @media(max-width: 991px) {
+                left: 43%;
+                top: 47px;
+            }
+            @media(max-width: 900px) {
+                left: 55%;
+                top: 16%;
+            }
+            & img {
+                width: 220px;
+                @media(max-width: 1100px) {
+                    width: 190px;
+                }
+                @media(max-width: 991px) {
+                    width: 160px;
+                }
+                @media(max-width: 900px) {
+                    width: 240px;
+                }
+            }
+		}
+
+		&__purif-end {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media(max-width: 900px) {
+                width: 58%;
+            }
+		}
+
+        &__purif-btn {
+            height: 100px;
+            text-align: center;
+            & a {
+                padding: 21px 97px 21px;
+                font-size: 18px;
+            }
+        }
+
+		&__benefits {
+            width: calc(100% / 2);
+            margin-bottom: 35px;
+            & img {
+                margin-bottom: 15px;
+                @media(max-width: 991px) {
+                    max-width: 80px;
+                }
+            }
+            & p {
+                color: white;
+            }
+		}
+
+		&__benefits-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		}
+}
